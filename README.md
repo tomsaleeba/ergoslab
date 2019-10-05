@@ -32,6 +32,9 @@ material so I'm also storing these files as I gather quotes.
   - Make all thumb keys easily accessible from the normal hand position
   - keep my vim-style arrows on the right hand
   - same plate design for both halves, achieved with optional switches
+  - optional switch holes aren't completely cut, so you don't have an unsightly
+      hole in the position you don't use. To break the piece out, stick
+      something through the circular hole and twist it out.
   - leverage QMK layout from an existing keyboard if possible. Any 4x7 layout
       is a contender: ergotravel, Ergo42, Runner3680
   - layer status LEDs
