@@ -15,7 +15,7 @@ willing to make that tradeoff for a more useful keyboard.
 
 As this will be the first board I've built from scratch, I'll try to piggy back
 on existing an QMK keyboard that already has a strong community; I'm thinking
-the ergotravel.
+the ErgoTravel.
 
 ## Repo layout
 The `master.dxf` file is the source of truth for the switch plate. It contains
@@ -36,22 +36,21 @@ material so I'm also storing these files as I gather quotes.
       hole in the position you don't use. To break the piece out, stick
       something through the circular hole and twist it out.
   - leverage QMK layout from an existing keyboard if possible. Any 4x7 layout
-      is a contender: ergotravel, Ergo42, Runner3680
+      is a contender:
+      [ErgoTravel](https://github.com/jpconstantineau/ErgoTravel),
+      [Ergo42](https://github.com/Biacco42/Ergo42),
+      [Runner3680](https://github.com/omkbd/Runner3680)
   - layer status LEDs
   - those large, pink keys are placeholders for the pro micros
   - the thumb keys are rotated the opposite way to what you'd think because
     they pack tighter (make a smaller footprint) and still feel ok
   - minimise overall footprint by using internal standoffs (thanks for the idea
-      ergotravel)
-  - mounting holes for a SwanMatch Moge Naide Pro Micro socket [photo
-      here](./misc/swanmatch-moge-naide.jpg)
-      ([link](https://booth.pm/ja/items/1073313)
-      [link](https://twitter.com/swan_match/status/1034413919882731521)
-      [link](https://www.instagram.com/p/BtsCKRRgETS/)) in either orientation
-      so you can either plug directly into your Pro Micro, or mount it reverse
-      and wire it to a USB breakout board. This way you can run USB-C via a
-      breakout board even if your Pro Micro doesn't support it. Plus, if you
-      break a connector, it's only the breakout board.
+      ErgoTravel)
+  - mounting holes for a SwanMatch Moge Naide [Pro Micro socket](#pro-micro-socket)
+      in either orientation.  So you can either plug directly into your Pro
+      Micro, or mount it reverse and wire it to a USB breakout board. This way
+      you can run USB-C via a breakout board even if your Pro Micro doesn't
+      support it. Plus, if you break a connector, it's only the breakout board.
   - mounting holes for the [SparkFun USB-C breakout
       board](https://github.com/sparkfun/USB-C-Breakout/)
   - use only 1U key caps to minimise size and because stabilisers are annoying
@@ -60,7 +59,7 @@ material so I'm also storing these files as I gather quotes.
   - 2x top plates
   - 2x bottom plates
   - 2x pro micro
-  - 2x pro micro sockets
+  - 2x [pro micro sockets](#pro-micro-socket)
   - 2x TRRS connectors
   - 1x TRRS cable
   - 2x reset switches
@@ -85,6 +84,16 @@ material so I'm also storing these files as I gather quotes.
   1. what length standoffs/screws do we need between the top and bottom?
   1. what length standoffs/screws do we need between the Pro Micro sockets and the
      top/bottom?
+
+## Pro Micro socket
+I'll be using [these](./misc/swanmatch-moge-naide.jpg) Pro Micro sockets.
+They're labelled with SwanMatch and Moge Naide. SwanMatch is a
+[person](https://github.com/swanmatch) but I'm unsure what Moge Naide means.
+I'm guessing it's the name of the PCB?  I can't find a GitHub repo for the PCB,
+but here's some mentions of it around the internet:
+[link](https://booth.pm/ja/items/1073313)
+[link](https://twitter.com/swan_match/status/1034413919882731521)
+[link](https://www.instagram.com/p/BtsCKRRgETS/).
 
 ## FAQ
 **Is there a PCB?**\
