@@ -1,5 +1,7 @@
 > my end game keyboard... I hope
 
+**Beware: I haven't built this yet. So I guess it might not work**
+
 ![keyboard layout](./layout.png)
 
 ## What is this thing?
@@ -50,8 +52,31 @@ material so I'm also storing these files as I gather quotes.
   - mounting holes for the [SparkFun USB-C breakout
       board](https://github.com/sparkfun/USB-C-Breakout/)
 
+## Parts list
+  - 2x top plates
+  - 2x bottom plates
+  - 2x pro micro
+  - 2x pro micro sockets
+  - 2x TRRS connectors
+  - 2x reset switches
+  - 56x key switches
+  - 56x diodes
+  - 2x 4.7kΩ pull-up resistors?
+  - 6x 3mm LEDs, for layer status
+  - 22x M2 standoffs, for between top and bottom plates (length?)
+  - 8x M2 standoffs, for mounting the Pro Micro sockets
+  - (optional) 2x SparkFun USB-C breakout boards
+  - (optional) 2x USB micro cables to wire the Pro Micro to the breakout board
+
 ## The switch plate
 ![switch plate](./switch-plate.png)
+
+## Open questions
+  1. do we need [pull up
+     resistors](https://beta.docs.qmk.fm/features/feature_split_keyboard#required-hardware) for communication between the two halves?
+  1. what length standoffs do we need between the top and bottom?
+  1. what length standoffs do we need between the Pro Micro sockets and the
+     top/bottom?
 
 ## FAQ
 **Is there a PCB?**
