@@ -8,7 +8,7 @@
 I've been using an ErgoDox as my only keyboard for quite a few years now and I
 love it. I may have a need for a more portable keyboard in the future so I've
 been exploring keyboards with less keys. There are so many candidates
-([here](https://docs.google.com/spreadsheets/d/19-rTWbp8SCKdZFByPZu3RT8NSF8vVddDe8WL6R6b1qQ/edit?usp=sharing)
+([here](https://docs.google.com/spreadsheets/d/19-rTWbp8SCKdZFByPZu3RT8NSF8vVddDe8WL6R6b1qQ/edit?usp=sharing), [here](https://keebfol.io/)
 and [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
 *exactly* what I want, so why not build my own!
 
