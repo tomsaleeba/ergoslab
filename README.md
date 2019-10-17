@@ -92,9 +92,9 @@ material so I'm also storing these files as I gather quotes.
 ## Answered questions
   1. can I get the same "only flash master" behaviour as the Ergodox EZ by
      using a [MCP23018-E/SP I/O expander](https://www.ergodox.io/#electronics)
-     on the slave side?
-     [no](https://www.reddit.com/r/olkb/comments/bdchr5/hardware_options/el2b9s9/)
-     [no](https://www.reddit.com/r/olkb/comments/a8y8mv/help_using_an_io_expander_with_qmk/ecro8p5/)
+     on the slave side? Yes, but it's not worth it as it'll be slow.
+     [link](https://www.reddit.com/r/olkb/comments/bdchr5/hardware_options/el2b9s9/)
+     [link](https://www.reddit.com/r/olkb/comments/a8y8mv/help_using_an_io_expander_with_qmk/ecro8p5/)
 
 ## Pro Micro socket
 I'll be using [these](./misc/swanmatch-moge-naide.jpg) Pro Micro sockets.
