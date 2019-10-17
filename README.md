@@ -83,14 +83,18 @@ material so I'm also storing these files as I gather quotes.
   1. what length standoffs/screws do we need between the top and bottom?
   1. what length standoffs/screws do we need between the Pro Micro sockets and the
      top/bottom?
-  1. how do we get flash behaviour the same as the Ergodox EZ: only need to
-     flash master
   1. will layer status LEDs clear keycaps
   1. can we have no top plate over the pro micro to keep the whole board
      thinner, like the crkbd?
+  1. if I fork the crkbd, can we use the backlight LEDs as layer status
+     indicators? Or do we still need to add layer LEDs separately?
+
+## Answered questions
   1. can I get the same "only flash master" behaviour as the Ergodox EZ by
      using a [MCP23018-E/SP I/O expander](https://www.ergodox.io/#electronics)
      on the slave side?
+     [no](https://www.reddit.com/r/olkb/comments/bdchr5/hardware_options/el2b9s9/)
+     [no](https://www.reddit.com/r/olkb/comments/a8y8mv/help_using_an_io_expander_with_qmk/ecro8p5/)
 
 ## Pro Micro socket
 I'll be using [these](./misc/swanmatch-moge-naide.jpg) Pro Micro sockets.
