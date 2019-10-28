@@ -18,6 +18,7 @@ is a "hello world" project to test my ideas/goals.
 - add reset
 - add OLED? (and pull up resistors)
 - add layer status LEDs
+- look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
 
 # Images
 ![pcb design](./image/pcb-design.png)
