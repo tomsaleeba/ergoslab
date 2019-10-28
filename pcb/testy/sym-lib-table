@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name promicro)(type Legacy)(uri ${KIPRJMOD}/symbols/promicro.lib)(options "")(descr ""))
   (lib (name mj-4pp-9)(type Legacy)(uri ${KIPRJMOD}/symbols/mj-4pp-9.lib)(options "")(descr ""))
+  (lib (name led)(type Legacy)(uri ${KIPRJMOD}/symbols/led.lib)(options "")(descr ""))
 )
