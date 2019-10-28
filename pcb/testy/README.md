@@ -9,12 +9,15 @@ is a "hello world" project to test my ideas/goals.
 - a design that can be used for either side of a split keyboard
 - support 5 pin switches
 - single socket for ProMicro. Just mount it flipped for other side
+- through-hole diodes, because they're easier to solder
+- no RGB because there's no room and it's not my thing
 
 # TODO
 - make the ProMicro section snap-off for top layer
 - add TRRS
 - add reset
 - add OLED? (and pull up resistors)
+- add layer status LEDs
 
 # Images
 ![pcb design](./image/pcb-design.png)
