@@ -31,4 +31,6 @@ is a "hello world" project to test my ideas/goals.
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
 - [ProMicro symbol and footprint](https://github.com/Biacco42/ProMicroKiCad)
+- [TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
+- [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
 

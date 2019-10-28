@@ -36,9 +36,9 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5400 
 	1    5400 2100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1850 2600 0    50   Input ~ 0
+Text GLabel 1850 2400 0    50   Input ~ 0
 Row0
-Text GLabel 2850 2300 2    50   Input ~ 0
+Text GLabel 2850 2200 2    50   Input ~ 0
 Col0
 Text GLabel 5000 1350 1    50   Input ~ 0
 Col0
@@ -66,7 +66,7 @@ Text GLabel 6000 1350 1    50   Input ~ 0
 Col1
 Wire Wire Line
 	6000 1350 6000 1950
-Text GLabel 2850 2400 2    50   Input ~ 0
+Text GLabel 2850 2300 2    50   Input ~ 0
 Col1
 $Comp
 L Switch:SW_Push SW0:1
@@ -193,9 +193,9 @@ Wire Wire Line
 Connection ~ 5400 2950
 Text GLabel 4400 2950 0    50   Input ~ 0
 Row1
-Text GLabel 2850 2500 2    50   Input ~ 0
+Text GLabel 2850 2400 2    50   Input ~ 0
 Col2
-Text GLabel 1850 2700 0    50   Input ~ 0
+Text GLabel 1850 2500 0    50   Input ~ 0
 Row1
 $Comp
 L Switch:SW_Push SW0:3
@@ -254,9 +254,9 @@ Wire Wire Line
 	7300 2950 8200 2950
 Connection ~ 7300 2250
 Connection ~ 7300 2950
-Text GLabel 2850 2600 2    50   Input ~ 0
+Text GLabel 2850 2500 2    50   Input ~ 0
 Col3
-Text GLabel 1850 2800 0    50   Input ~ 0
+Text GLabel 1850 2600 0    50   Input ~ 0
 Row2
 $Comp
 L promicro:ProMicro U1
@@ -269,7 +269,7 @@ F 3 "" H 2350 2150 60  0001 C CNN
 	1    2350 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1850 2900 0    50   Input ~ 0
+Text GLabel 1850 2700 0    50   Input ~ 0
 Row3
 $Comp
 L Switch:SW_Push SW2:0
@@ -497,4 +497,125 @@ Connection ~ 6000 2650
 Connection ~ 5000 2650
 Text GLabel 4400 4350 0    50   Input ~ 0
 Row3
+$Comp
+L mj-4pp-9:MJ-4PP-9 J?
+U 1 1 5DB680F2
+P 2850 5600
+F 0 "J?" H 2372 5527 60  0000 R CNN
+F 1 "MJ-4PP-9" H 2372 5633 60  0000 R CNN
+F 2 "" H 2850 5600 60  0000 C CNN
+F 3 "" H 2850 5600 60  0000 C CNN
+	1    2850 5600
+	-1   0    0    1   
+$EndComp
+Text GLabel 1850 1900 0    50   Input ~ 0
+data
+$Comp
+L power:GND #PWR?
+U 1 1 5DB6F1F7
+P 1300 2250
+F 0 "#PWR?" H 1300 2000 50  0001 C CNN
+F 1 "GND" H 1305 2077 50  0000 C CNN
+F 2 "" H 1300 2250 50  0001 C CNN
+F 3 "" H 1300 2250 50  0001 C CNN
+	1    1300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2000 1300 2000
+Wire Wire Line
+	1300 2000 1300 2100
+Wire Wire Line
+	1850 2100 1300 2100
+Connection ~ 1300 2100
+Wire Wire Line
+	1300 2100 1300 2250
+Wire Wire Line
+	2850 1900 2950 1900
+Wire Wire Line
+	2950 1900 2950 1450
+Wire Wire Line
+	2950 1450 1300 1450
+Wire Wire Line
+	1300 1450 1300 2000
+Connection ~ 1300 2000
+Text GLabel 2850 2600 2    50   Input ~ 0
+Col4
+Text GLabel 2850 2700 2    50   Input ~ 0
+Col5
+Text GLabel 2850 2800 2    50   Input ~ 0
+Col6
+Text GLabel 1850 2800 0    50   Input ~ 0
+Row4
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB780CB
+P 3350 1850
+F 0 "#PWR?" H 3350 1700 50  0001 C CNN
+F 1 "VCC" H 3367 2023 50  0000 C CNN
+F 2 "" H 3350 1850 50  0001 C CNN
+F 3 "" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2100 3350 2100
+Wire Wire Line
+	3350 2100 3350 1850
+Text GLabel 2400 5400 0    50   Input ~ 0
+data
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB7BCAC
+P 1900 5750
+F 0 "#PWR?" H 1900 5600 50  0001 C CNN
+F 1 "VCC" H 1918 5923 50  0000 C CNN
+F 2 "" H 1900 5750 50  0001 C CNN
+F 3 "" H 1900 5750 50  0001 C CNN
+	1    1900 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB7C36F
+P 1750 5500
+F 0 "#PWR?" H 1750 5250 50  0001 C CNN
+F 1 "GND" H 1755 5327 50  0000 C CNN
+F 2 "" H 1750 5500 50  0001 C CNN
+F 3 "" H 1750 5500 50  0001 C CNN
+	1    1750 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5500 2400 5500
+Wire Wire Line
+	2400 5600 1900 5600
+Wire Wire Line
+	1900 5600 1900 5750
+$Comp
+L Switch:SW_Push SW-reset
+U 1 1 5DB80D38
+P 2500 4050
+F 0 "SW-reset" H 2500 4335 50  0000 C CNN
+F 1 "SW_Push" H 2500 4244 50  0000 C CNN
+F 2 "footprints:TACT_SWITCH_TVBP06" H 2500 4250 50  0001 C CNN
+F 3 "~" H 2500 4250 50  0001 C CNN
+	1    2500 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 2000 2    50   Input ~ 0
+Reset
+Text GLabel 2700 4050 2    50   Input ~ 0
+Reset
+$Comp
+L power:GND #PWR?
+U 1 1 5DB88784
+P 2300 4050
+F 0 "#PWR?" H 2300 3800 50  0001 C CNN
+F 1 "GND" H 2305 3877 50  0000 C CNN
+F 2 "" H 2300 4050 50  0001 C CNN
+F 3 "" H 2300 4050 50  0001 C CNN
+	1    2300 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
