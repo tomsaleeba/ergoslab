@@ -10,6 +10,12 @@ is a "hello world" project to test my ideas/goals.
 - support 5 pin switches
 - single socket for ProMicro. Just mount it flipped for other side
 
+# TODO
+- make the ProMicro section snap-off for top layer
+- add TRRS
+- add reset
+- add OLED? (and pull up resistors)
+
 # Images
 ![pcb design](./image/pcb-design.png)
 
@@ -22,3 +28,4 @@ is a "hello world" project to test my ideas/goals.
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
 - [ProMicro symbol and footprint](https://github.com/Biacco42/ProMicroKiCad)
+
