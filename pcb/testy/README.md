@@ -38,6 +38,7 @@ is a "hello world" project to test my ideas/goals.
 - [ProMicro symbol and footprint](https://github.com/Biacco42/ProMicroKiCad)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
 - [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
+- [TRRS footprint](https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A-dual.kicad_mod)
 - [LED symbol](https://github.com/tmk/kicad_lib_tmk)
 - LED footprint from built in Kicad library
 
