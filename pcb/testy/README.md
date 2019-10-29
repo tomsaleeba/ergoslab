@@ -19,6 +19,10 @@ is a "hello world" project to test my ideas/goals.
 - add OLED? (and pull up resistors)
 - add layer status LEDs
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
+- add solder pads for missing switches so people can make external mounts and
+    use them
+- add fuses/overcurrent/reverse polarity protection for TRRS? Not sure what
+    that coupler solder pad setup on the helix is for
 
 # Images
 ![pcb design](./image/pcb-design.png)
@@ -34,4 +38,6 @@ is a "hello world" project to test my ideas/goals.
 - [ProMicro symbol and footprint](https://github.com/Biacco42/ProMicroKiCad)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
 - [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
+- [LED symbol](https://github.com/tmk/kicad_lib_tmk)
+- LED footprint from built in Kicad library
 
