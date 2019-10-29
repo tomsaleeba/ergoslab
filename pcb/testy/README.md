@@ -23,6 +23,7 @@ is a "hello world" project to test my ideas/goals.
     use them
 - add fuses/overcurrent/reverse polarity protection for TRRS? Not sure what
     that coupler solder pad setup on the helix is for
+- look at using 4 pin reset switches if they're easier to get
 
 # Images
 ![pcb design](./image/pcb-design.png)
