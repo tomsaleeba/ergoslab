@@ -3,7 +3,9 @@ I'm learning about PCB design, so I can make my own mechanical keyboard. This
 is a "hello world" project to test my ideas/goals.
 
 # Goals
-- Support for Kailh hotswap sockets
+- Support for Kailh hotswap sockets (and kailh choc as solder on)
+- add thumb keys, actually all keys, are accessible from the "home" hand
+    position
 - One PCB design that works as all 3 layers of a sandwich design: base, PCB and
     switch plate. Idea taken from [for-split-keyboard](https://github.com/peej/for-split-keyboard)
 - a design that can be used for either side of a split keyboard
@@ -14,16 +16,17 @@ is a "hello world" project to test my ideas/goals.
 
 # TODO
 - make the ProMicro section snap-off for top layer
-- add TRRS
-- add reset
+- support 4 pin reset button (in addition)
 - add OLED? (and pull up resistors)
 - add layer status LEDs
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
-- add solder pads for missing switches so people can make external mounts and
+- add solder pads for missing switches, and diodes, so people can make external mounts and
     use them
 - add fuses/overcurrent/reverse polarity protection for TRRS? Not sure what
     that coupler solder pad setup on the helix is for
-- look at using 4 pin reset switches if they're easier to get
+- add licence to repo and silk screen
+- add build instructions to silk screen
+- add pin names to ProMicro footprint
 
 # Images
 ![pcb design](./image/pcb-design.png)
