@@ -264,7 +264,7 @@ U 1 1 5DB7A2E7
 P 1750 2250
 F 0 "U1" H 1750 2847 60  0000 C CNN
 F 1 "ProMicro" H 1750 2741 60  0000 C CNN
-F 2 "footprints:ProMicro" H 1750 2250 60  0001 C CNN
+F 2 "footprints:Pro_Micro_ergotravel" H 1750 2250 60  0001 C CNN
 F 3 "" H 1750 2250 60  0001 C CNN
 	1    1750 2250
 	1    0    0    -1  
@@ -593,29 +593,29 @@ Wire Wire Line
 Wire Wire Line
 	1150 6400 1150 6550
 $Comp
-L Switch:SW_Push SW-reset1
+L Switch:SW_Push SW-reset2
 U 1 1 5DB80D38
-P 1650 4000
-F 0 "SW-reset1" H 1650 4285 50  0000 C CNN
-F 1 "SW_Push" H 1650 4194 50  0000 C CNN
-F 2 "footprints:TACT_SWITCH_TVBP06" H 1650 4200 50  0001 C CNN
-F 3 "~" H 1650 4200 50  0001 C CNN
-	1    1650 4000
+P 1550 3950
+F 0 "SW-reset2" H 1550 4235 50  0000 C CNN
+F 1 "SW_Push" H 1550 4144 50  0000 C CNN
+F 2 "footprints:TACT_SWITCH_TVBP06" H 1550 4150 50  0001 C CNN
+F 3 "~" H 1550 4150 50  0001 C CNN
+	1    1550 3950
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 2100 2    50   Input ~ 0
 Reset
-Text GLabel 1850 4000 2    50   Input ~ 0
+Text GLabel 2500 3500 2    50   Input ~ 0
 Reset
 $Comp
 L power:GND #PWR0105
 U 1 1 5DB88784
-P 1450 4000
-F 0 "#PWR0105" H 1450 3750 50  0001 C CNN
-F 1 "GND" H 1455 3827 50  0000 C CNN
-F 2 "" H 1450 4000 50  0001 C CNN
-F 3 "" H 1450 4000 50  0001 C CNN
-	1    1450 4000
+P 950 4250
+F 0 "#PWR0105" H 950 4000 50  0001 C CNN
+F 1 "GND" H 955 4077 50  0000 C CNN
+F 2 "" H 950 4250 50  0001 C CNN
+F 3 "" H 950 4250 50  0001 C CNN
+	1    950  4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1086,4 +1086,54 @@ Text GLabel 2250 5650 2    50   Input ~ 0
 LED2
 Wire Wire Line
 	1350 6200 1650 6200
+$Comp
+L Switch:SW_Push SW-reset1
+U 1 1 5DBAFB80
+P 1100 3600
+F 0 "SW-reset1" H 1100 3885 50  0000 C CNN
+F 1 "SW_Push" H 1100 3794 50  0000 C CNN
+F 2 "footprints:TACT_SWITCH_TVBP06" H 1100 3800 50  0001 C CNN
+F 3 "~" H 1100 3800 50  0001 C CNN
+	1    1100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW-reset3
+U 1 1 5DBB0450
+P 2050 4200
+F 0 "SW-reset3" H 2050 4485 50  0000 C CNN
+F 1 "SW_Push" H 2050 4394 50  0000 C CNN
+F 2 "footprints:TACT_SWITCH_TVBP06" H 2050 4400 50  0001 C CNN
+F 3 "~" H 2050 4400 50  0001 C CNN
+	1    2050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3500 2250 3500
+Wire Wire Line
+	1300 3500 1300 3600
+Wire Wire Line
+	1750 3950 1750 3500
+Connection ~ 1750 3500
+Wire Wire Line
+	1750 3500 1300 3500
+Wire Wire Line
+	2250 4200 2250 3500
+Connection ~ 2250 3500
+Wire Wire Line
+	2250 3500 1750 3500
+Wire Wire Line
+	900  3600 900  3950
+Wire Wire Line
+	900  4250 950  4250
+Wire Wire Line
+	1350 3950 900  3950
+Connection ~ 900  3950
+Wire Wire Line
+	900  3950 900  4200
+Wire Wire Line
+	1850 4200 900  4200
+Connection ~ 900  4200
+Wire Wire Line
+	900  4200 900  4250
 $EndSCHEMATC

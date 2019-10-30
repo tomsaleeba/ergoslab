@@ -25,9 +25,11 @@ is a "hello world" project to test my ideas/goals.
 - add fuses/overcurrent/reverse polarity protection for TRRS? Not sure what
     that coupler solder pad setup on the helix is for
 - add licence to repo and silk screen
+- do I have the right diode (and footprint)?
 - add build instructions to silk screen
-- add pin names to ProMicro footprint
 - add holes for acrylic cover over oled
+- merge two diode footprints
+- consider using new uber-switch footprint
 - create thumb cluster tester
   - stairs (2 keys)
   - 1U split of ergodox (4 keys)
@@ -47,10 +49,10 @@ is a "hello world" project to test my ideas/goals.
 
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
-- [ProMicro symbol and footprint](https://github.com/Biacco42/ProMicroKiCad)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
 - [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
 - [TRRS footprint](https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A-dual.kicad_mod)
 - [LED symbol](https://github.com/tmk/kicad_lib_tmk)
-- LED footprint from built in Kicad library
+- LED and diode footprints from built in Kicad library
+- [footprints: 4 pin TACT reset, promicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/master/Library/footprints.pretty)
 
