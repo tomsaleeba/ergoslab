@@ -27,6 +27,7 @@ is a "hello world" project to test my ideas/goals.
 - add licence to repo and silk screen
 - add build instructions to silk screen
 - add pin names to ProMicro footprint
+- add holes for acrylic cover over oled
 - create thumb cluster tester
   - stairs (2 keys)
   - 1U split of ergodox (4 keys)
