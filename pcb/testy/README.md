@@ -28,15 +28,10 @@ is a "hello world" project to test my ideas/goals.
 - do I have the right diode (and footprint)?
 - add build instructions to silk screen
 - add holes for acrylic cover over oled
+- are the PTH for the choc switches going to be a problem as they're over the
+    solder on pads for the 1511 socket?
 - merge two diode footprints
-- consider using new uber-switch footprint
-- create thumb cluster tester
-  - stairs (2 keys)
-  - 1U split of ergodox (4 keys)
-  - stagger of 1U split of ergodox (4 keys) - could do 0.25 increments of Y
-      coord
-  - counter rotation (3 keys)
-  - rorshach arch (maybe)
+- layout keys as columnar staggered: 0, +1/4 (4.75mm), +3/8 (7.125mm), +1/4 (4.75mm), +1/8 (2.375mm)
 
 # Images
 ![pcb design](./image/pcb-design.png)
