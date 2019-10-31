@@ -32,6 +32,9 @@ is a "hello world" project to test my ideas/goals.
     solder on pads for the 1511 socket?
 - merge two diode footprints
 - layout keys as columnar staggered: 0, +1/4 (4.75mm), +3/8 (7.125mm), +1/4 (4.75mm), +1/8 (2.375mm)
+- is the ARM CPU in the Ergodox Infinity the same as the Proton-C? If so, can
+    we use that firmware to get split support for a controller with more flash?
+- name the board as lilydox? Maybe with a chicken silk screen?
 
 # Images
 ![pcb design](./image/pcb-design.png)
