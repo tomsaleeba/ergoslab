@@ -15,11 +15,20 @@ is a "hello world" project to test my ideas/goals.
 - no RGB because there's no room and it's not my thing
 
 # TODO
-- make the ProMicro section snap-off for top layer
-- support 4 pin reset button (in addition)
+- make the ProMicro section snap-off for top layer. Although, we only need it
+    for the OLED so we could have a small snapout window for that and then LEDs
+    and reset "just work".
+- do we mount the promicro on the top or bottom of the PCB? Top works if we
+    have snapoff section but if we don't, we need to use the bottom so we can
+    access it
+- make hole to reach reset button if it's not on the snapoff section
 - add OLED? (and pull up resistors)
-- do I need resistors for my layer LEDs?
-- add layer status LEDs
+- LEDs:
+  - do I need resistors
+  - add layer status LED footprints
+  - can we cut 3mm mounting holes just to the side of the pads and bend the
+      LED legs to reach the pads. Means less drilling for us. These need to be
+      on the main section, not the snapoff
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
 - add solder pads for missing switches, and diodes, so people can make external mounts and
     use them
@@ -31,7 +40,6 @@ is a "hello world" project to test my ideas/goals.
 - add holes for acrylic cover over oled
 - are the PTH for the choc switches going to be a problem as they're over the
     solder on pads for the 1511 socket?
-- merge two diode footprints
 - layout keys as columnar staggered: 0, +1/4 (4.75mm), +3/8 (7.125mm), +1/4 (4.75mm), +1/8 (2.375mm)
 - is the ARM CPU in the Ergodox Infinity the same as the Proton-C? If so, can
     we use that firmware to get split support for a controller with more flash?
