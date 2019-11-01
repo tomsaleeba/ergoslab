@@ -18,6 +18,7 @@ is a "hello world" project to test my ideas/goals.
 - make the ProMicro section snap-off for top layer
 - support 4 pin reset button (in addition)
 - add OLED? (and pull up resistors)
+- do I need resistors for my layer LEDs?
 - add layer status LEDs
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
 - add solder pads for missing switches, and diodes, so people can make external mounts and
