@@ -35,6 +35,8 @@ is a "hello world" project to test my ideas/goals.
 - add fuses/overcurrent/reverse polarity protection for TRRS? Not sure what
     that coupler solder pad setup on the helix is for
 - add licence to repo and silk screen
+- add ICSP headers
+- add other test points (VCC, RAW, etc)
 - do I have the right diode (and footprint)?
 - add build instructions to silk screen
 - add holes for acrylic cover over oled
