@@ -21,6 +21,10 @@ is a "hello world" project to test my ideas/goals.
 - do we mount the promicro on the top or bottom of the PCB? Top works if we
     have snapoff section but if we don't, we need to use the bottom so we can
     access it
+- should we support the switch plate or just leave it floating? The bottom of
+    the switches will be better at supporting keypresses than the switch plate
+    so the plate is just for alignment. We need 3.5mm spacers (for MX switches)
+    if we choose to attach the switch plate to the pcb.
 - make hole to reach reset button if it's not on the snapoff section
 - add OLED? (and pull up resistors)
 - LEDs:
