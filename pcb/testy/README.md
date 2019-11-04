@@ -63,6 +63,9 @@ is a "hello world" project to test my ideas/goals.
 
 ![pcb back render](./image/pcb-back-render.png)
 
+# Parts
+- 2x PJ-3200B-4A [link](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) (PJ-320A is discontinued)
+
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
