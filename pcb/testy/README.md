@@ -27,6 +27,9 @@ is a "hello world" project to test my ideas/goals.
     if we choose to attach the switch plate to the pcb.
 - make hole to reach reset button if it's not on the snapoff section
 - add OLED? (and pull up resistors)
+- make sure the ProMicro is set back enough that you could permanently plug a
+    flying-lead plug into it (to go to a USB-C breakout board) and not have it
+    vulnerable.
 - LEDs:
   - do I need resistors
   - add layer status LED footprints
