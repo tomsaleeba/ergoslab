@@ -26,6 +26,7 @@ is a "hello world" project to test my ideas/goals.
     and get out the way of the next row. MX are 5mm deep, choc are 2.35mm so
     the choc row should drop by 2.65mm. The top of the choc switches will be
     ~5mm above the top of the switchplate for the MX switches.
+- do we *need* that blank space for thumbs to rest?
 - should we support the switch plate or just leave it floating? The bottom of
     the switches will be better at supporting keypresses than the switch plate
     so the plate is just for alignment. We need 3.5mm spacers (for MX switches)
