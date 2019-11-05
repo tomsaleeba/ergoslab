@@ -21,6 +21,9 @@ is a "hello world" project to test my ideas/goals.
 - do we mount the promicro on the top or bottom of the PCB? Top works if we
     have snapoff section but if we don't, we need to use the bottom so we can
     access it
+- make the bottom row, where the choc switches go, snap-off so they can use the
+    switch plate and still reach the PCB. The bonus is that they'll mount lower
+    and get out the way of the next row.
 - should we support the switch plate or just leave it floating? The bottom of
     the switches will be better at supporting keypresses than the switch plate
     so the plate is just for alignment. We need 3.5mm spacers (for MX switches)
