@@ -37,11 +37,13 @@ is a "hello world" project to test my ideas/goals.
     flying-lead plug into it (to go to a USB-C breakout board) and not have it
     vulnerable.
 - LEDs:
-  - do I need resistors
+  - do I need resistors? Yes. At full brightness: 82 - 100ohm for blue, green or white; and 150 - 180ohms for red or yellow
   - add layer status LED footprints
   - can we cut 3mm mounting holes just to the side of the pads and bend the
       LED legs to reach the pads. Means less drilling for us. These need to be
       on the main section, not the snapoff
+  - make sure we don't exceed max current for pin groups (100mA). I don't think
+      the switches use much current so we should be ok
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
 - add solder pads for missing switches, and diodes, so people can make external mounts and
     use them
