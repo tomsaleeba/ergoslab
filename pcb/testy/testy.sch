@@ -967,7 +967,7 @@ Wire Wire Line
 	6550 4650 7450 4650
 Connection ~ 6550 4650
 Text GLabel 3650 4650 0    50   Input ~ 0
-Row3
+Row4
 $Comp
 L Switch:SW_Push SW4:4
 U 1 1 5DBF16EC
@@ -1028,9 +1028,7 @@ Connection ~ 9850 3650
 Wire Wire Line
 	9850 950  9850 3650
 Wire Wire Line
-	8450 4650 10250 4650
-Wire Wire Line
-	3650 4650 5650 4650
+	8450 4650 9350 4650
 Connection ~ 8450 2550
 Wire Wire Line
 	8450 2550 9350 2550
@@ -1136,4 +1134,62 @@ Wire Wire Line
 Connection ~ 900  4200
 Wire Wire Line
 	900  4200 900  4250
+$Comp
+L Switch:SW_Push SW4:0
+U 1 1 5DCA6DFA
+P 4450 4350
+F 0 "SW4:0" H 4450 4635 50  0000 C CNN
+F 1 "SW_Push" H 4450 4544 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 4550 50  0001 C CNN
+F 3 "~" H 4450 4550 50  0001 C CNN
+	1    4450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3650 4250 4350
+$Comp
+L Diode:1N4148 D4:0
+U 1 1 5DCA6E05
+P 4650 4500
+F 0 "D4:0" V 4696 4421 50  0000 R CNN
+F 1 "1N4148" V 4605 4421 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 4325 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 4650 4650 4650
+Connection ~ 4250 3650
+Connection ~ 4650 4650
+Wire Wire Line
+	4650 4650 5650 4650
+$Comp
+L Switch:SW_Push SW4:5
+U 1 1 5DCF66B6
+P 9150 4350
+F 0 "SW4:5" H 9150 4635 50  0000 C CNN
+F 1 "SW_Push" H 9150 4544 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 4550 50  0001 C CNN
+F 3 "~" H 9150 4550 50  0001 C CNN
+	1    9150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3650 8950 4350
+$Comp
+L Diode:1N4148 D4:5
+U 1 1 5DCF66C1
+P 9350 4500
+F 0 "D4:5" V 9396 4421 50  0000 R CNN
+F 1 "1N4148" V 9305 4421 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9350 4325 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9350 4500 50  0001 C CNN
+	1    9350 4500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8950 3650
+Connection ~ 9350 4650
+Wire Wire Line
+	9350 4650 10250 4650
 $EndSCHEMATC
