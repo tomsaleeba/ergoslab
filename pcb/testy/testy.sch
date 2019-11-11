@@ -1028,7 +1028,7 @@ Connection ~ 9850 3650
 Wire Wire Line
 	9850 950  9850 3650
 Wire Wire Line
-	8450 4650 9350 4650
+	8450 4650 9000 4650
 Connection ~ 8450 2550
 Wire Wire Line
 	8450 2550 9350 2550
@@ -1191,5 +1191,53 @@ $EndComp
 Connection ~ 8950 3650
 Connection ~ 9350 4650
 Wire Wire Line
-	9350 4650 10250 4650
+	9350 4650 10000 4650
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5DC944CA
+P 9350 4950
+F 0 "J1" H 9430 4942 50  0000 L CNN
+F 1 "Conn_01x02" H 9430 4851 50  0000 L CNN
+F 2 "footprints:edge-connector" H 9350 4950 50  0001 C CNN
+F 3 "~" H 9350 4950 50  0001 C CNN
+	1    9350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4350 8950 5050
+Wire Wire Line
+	8950 5050 9100 5050
+Connection ~ 8950 4350
+Wire Wire Line
+	9000 4650 9000 4950
+Wire Wire Line
+	9000 4950 9150 4950
+Connection ~ 9000 4650
+Wire Wire Line
+	9000 4650 9350 4650
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5DC9EDA4
+P 8700 5350
+F 0 "J2" H 8618 5025 50  0000 C CNN
+F 1 "Conn_01x02" H 8618 5116 50  0000 C CNN
+F 2 "footprints:edge-connector" H 8700 5350 50  0001 C CNN
+F 3 "~" H 8700 5350 50  0001 C CNN
+	1    8700 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 5050 9100 5250
+Wire Wire Line
+	9100 5250 8900 5250
+Connection ~ 9100 5050
+Wire Wire Line
+	9100 5050 9150 5050
+Wire Wire Line
+	10000 4650 10000 5350
+Wire Wire Line
+	10000 5350 8900 5350
+Connection ~ 10000 4650
+Wire Wire Line
+	10000 4650 10250 4650
 $EndSCHEMATC
