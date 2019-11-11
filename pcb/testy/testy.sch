@@ -1240,4 +1240,15 @@ Wire Wire Line
 Connection ~ 10000 4650
 Wire Wire Line
 	10000 4650 10250 4650
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DCB9C3F
+P 1950 7200
+F 0 "H1" H 2050 7246 50  0000 L CNN
+F 1 "USB-C Breakout Board" H 2050 7155 50  0000 L CNN
+F 2 "footprints:usb-c-breakout" H 1950 7200 50  0001 C CNN
+F 3 "~" H 1950 7200 50  0001 C CNN
+	1    1950 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
