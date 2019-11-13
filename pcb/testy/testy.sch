@@ -503,7 +503,7 @@ U 1 1 5DB680F2
 P 2100 6400
 F 0 "TRRS1" H 1622 6327 60  0000 R CNN
 F 1 "MJ-4PP-9" H 1622 6433 60  0000 R CNN
-F 2 "footprints:TRRS-PJ-320A-dual" H 2100 6400 60  0000 C CNN
+F 2 "footprints:TRRS-PJ-320A-dual" H 2050 6650 60  0001 C CNN
 F 3 "" H 2100 6400 60  0000 C CNN
 	1    2100 6400
 	-1   0    0    1   
@@ -539,11 +539,11 @@ Wire Wire Line
 Wire Wire Line
 	700  1550 700  2100
 Connection ~ 700  2100
-Text GLabel 2250 2700 2    50   Input ~ 0
+Text GLabel 2600 2550 2    50   Input ~ 0
 Col4
-Text GLabel 2250 2800 2    50   Input ~ 0
+Text GLabel 2600 2750 2    50   Input ~ 0
 Col5
-Text GLabel 2250 2900 2    50   Input ~ 0
+Text GLabel 2600 2950 2    50   Input ~ 0
 Col6
 Text GLabel 1250 2900 0    50   Input ~ 0
 Row4
@@ -1070,7 +1070,7 @@ Wire Wire Line
 Connection ~ 1200 5200
 Wire Wire Line
 	1200 5200 1200 5650
-Text GLabel 1250 2400 0    50   Input ~ 0
+Text GLabel 1250 1900 0    50   Input ~ 0
 LED0
 Text GLabel 1250 3000 0    50   Input ~ 0
 LED1
@@ -1251,4 +1251,305 @@ F 3 "~" H 1950 7200 50  0001 C CNN
 	1    1950 7200
 	1    0    0    -1  
 $EndComp
+Text GLabel 1250 2300 0    50   Input ~ 0
+SDA
+Text GLabel 1250 2400 0    50   Input ~ 0
+SCL
+Text Notes 900  1400 0    50   ~ 0
+FIXME can I use PD3 pin for driving an LED?\nAlternatively, can I drive 3 LEDs with fewer than 3 pins?
+$Comp
+L conn_01x04:CONN_01X04 P1
+U 1 1 5DCD19CA
+P 4050 5700
+F 0 "P1" H 3967 6065 50  0000 C CNN
+F 1 "OLED" H 3967 5974 50  0000 C CNN
+F 2 "" H 4050 5700 50  0000 C CNN
+F 3 "" H 4050 5700 50  0000 C CNN
+	1    4050 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L jp2:JP2 JP1
+U 1 1 5DCEEF2E
+P 4950 5400
+F 0 "JP1" V 4837 5400 50  0000 C CNN
+F 1 "JP2" V 4845 5400 40  0001 C CNN
+F 2 "" H 4950 5400 60  0000 C CNN
+F 3 "" H 4950 5400 60  0000 C CNN
+	1    4950 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L jp2:JP2 JP2
+U 1 1 5DCF00CE
+P 4950 5600
+F 0 "JP2" V 4837 5600 50  0000 C CNN
+F 1 "JP2" V 4845 5600 40  0001 C CNN
+F 2 "" H 4950 5600 60  0000 C CNN
+F 3 "" H 4950 5600 60  0000 C CNN
+	1    4950 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L jp2:JP2 JP4
+U 1 1 5DCF0797
+P 4950 6000
+F 0 "JP4" V 4837 6000 50  0000 C CNN
+F 1 "JP2" V 4845 6000 40  0001 C CNN
+F 2 "" H 4950 6000 60  0000 C CNN
+F 3 "" H 4950 6000 60  0000 C CNN
+	1    4950 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L jp2:JP2 JP3
+U 1 1 5DCF0E97
+P 4950 5800
+F 0 "JP3" V 4837 5800 50  0000 C CNN
+F 1 "JP2" V 4845 5800 40  0001 C CNN
+F 2 "" H 4950 5800 60  0000 C CNN
+F 3 "" H 4950 5800 60  0000 C CNN
+	1    4950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DCFEAE0
+P 5500 5600
+F 0 "#PWR?" H 5500 5450 50  0001 C CNN
+F 1 "VCC" H 5517 5773 50  0000 C CNN
+F 2 "" H 5500 5600 50  0001 C CNN
+F 3 "" H 5500 5600 50  0001 C CNN
+	1    5500 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD07F88
+P 5500 5400
+F 0 "#PWR?" H 5500 5150 50  0001 C CNN
+F 1 "GND" H 5505 5227 50  0000 C CNN
+F 2 "" H 5500 5400 50  0001 C CNN
+F 3 "" H 5500 5400 50  0001 C CNN
+	1    5500 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 5400 5500 5400
+Wire Wire Line
+	5500 5600 5150 5600
+Text GLabel 5150 5800 2    50   Input ~ 0
+SCL
+Text GLabel 5150 6000 2    50   Input ~ 0
+SDA
+$Comp
+L jp2:JP2 JP8
+U 1 1 5DD6CDF9
+P 4950 7000
+F 0 "JP8" V 5063 7000 50  0000 C CNN
+F 1 "JP2" V 4845 7000 40  0001 C CNN
+F 2 "" H 4950 7000 60  0000 C CNN
+F 3 "" H 4950 7000 60  0000 C CNN
+	1    4950 7000
+	0    1    -1   0   
+$EndComp
+$Comp
+L jp2:JP2 JP7
+U 1 1 5DD6CE03
+P 4950 6800
+F 0 "JP7" V 5063 6800 50  0000 C CNN
+F 1 "JP2" V 4845 6800 40  0001 C CNN
+F 2 "" H 4950 6800 60  0000 C CNN
+F 3 "" H 4950 6800 60  0000 C CNN
+	1    4950 6800
+	0    1    -1   0   
+$EndComp
+$Comp
+L jp2:JP2 JP5
+U 1 1 5DD6CE0D
+P 4950 6400
+F 0 "JP5" V 5063 6400 50  0000 C CNN
+F 1 "JP2" V 4845 6400 40  0001 C CNN
+F 2 "" H 4950 6400 60  0000 C CNN
+F 3 "" H 4950 6400 60  0000 C CNN
+	1    4950 6400
+	0    1    -1   0   
+$EndComp
+$Comp
+L jp2:JP2 JP6
+U 1 1 5DD6CE17
+P 4950 6600
+F 0 "JP6" V 5063 6600 50  0000 C CNN
+F 1 "JP2" V 4845 6600 40  0001 C CNN
+F 2 "" H 4950 6600 60  0000 C CNN
+F 3 "" H 4950 6600 60  0000 C CNN
+	1    4950 6600
+	0    1    -1   0   
+$EndComp
+Text Notes 4700 6250 0    50   ~ 0
+Right hand side
+$Comp
+L power:VCC #PWR?
+U 1 1 5DD6CE22
+P 5500 6800
+F 0 "#PWR?" H 5500 6650 50  0001 C CNN
+F 1 "VCC" H 5517 6973 50  0000 C CNN
+F 2 "" H 5500 6800 50  0001 C CNN
+F 3 "" H 5500 6800 50  0001 C CNN
+	1    5500 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD6CE2C
+P 5500 7000
+F 0 "#PWR?" H 5500 6750 50  0001 C CNN
+F 1 "GND" H 5505 6827 50  0000 C CNN
+F 2 "" H 5500 7000 50  0001 C CNN
+F 3 "" H 5500 7000 50  0001 C CNN
+	1    5500 7000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 7000 5500 7000
+Wire Wire Line
+	5500 6800 5150 6800
+Text GLabel 5150 6600 2    50   Input ~ 0
+SCL
+Text GLabel 5150 6400 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4250 5850 4400 5850
+Wire Wire Line
+	4400 5850 4400 6000
+Wire Wire Line
+	4400 7000 4750 7000
+Wire Wire Line
+	4250 5750 4500 5750
+Wire Wire Line
+	4500 5750 4500 5800
+Wire Wire Line
+	4500 6800 4750 6800
+Wire Wire Line
+	4250 5650 4600 5650
+Wire Wire Line
+	4600 5650 4600 6600
+Wire Wire Line
+	4600 6600 4750 6600
+Wire Wire Line
+	4250 5550 4700 5550
+Wire Wire Line
+	4700 5550 4700 6400
+Wire Wire Line
+	4700 6400 4750 6400
+Wire Wire Line
+	4400 6000 4750 6000
+Connection ~ 4400 6000
+Wire Wire Line
+	4400 6000 4400 7000
+Wire Wire Line
+	4750 5800 4500 5800
+Connection ~ 4500 5800
+Wire Wire Line
+	4500 5800 4500 6800
+Wire Wire Line
+	4750 5600 4600 5600
+Wire Wire Line
+	4600 5600 4600 5650
+Connection ~ 4600 5650
+Wire Wire Line
+	4750 5400 4700 5400
+Wire Wire Line
+	4700 5400 4700 5550
+Connection ~ 4700 5550
+Text Notes 4700 5250 0    50   ~ 0
+Left hand side
+$Comp
+L conn_01x06:CONN_01X06 P2
+U 1 1 5DDC8800
+P 6550 5750
+F 0 "P2" H 6467 6215 50  0000 C CNN
+F 1 "iCSP" H 6467 6124 50  0000 C CNN
+F 2 "" H 6550 5750 50  0000 C CNN
+F 3 "" H 6550 5750 50  0000 C CNN
+	1    6550 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDE0229
+P 7000 5600
+F 0 "#PWR?" H 7000 5450 50  0001 C CNN
+F 1 "VCC" H 7017 5773 50  0000 C CNN
+F 2 "" H 7000 5600 50  0001 C CNN
+F 3 "" H 7000 5600 50  0001 C CNN
+	1    7000 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE0C00
+P 7000 6000
+F 0 "#PWR?" H 7000 5750 50  0001 C CNN
+F 1 "GND" H 7005 5827 50  0000 C CNN
+F 2 "" H 7000 6000 50  0001 C CNN
+F 3 "" H 7000 6000 50  0001 C CNN
+	1    7000 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 6000 6750 6000
+Wire Wire Line
+	6750 5600 7000 5600
+Text GLabel 2600 3050 2    50   Input ~ 0
+MOSI
+Text GLabel 2600 2850 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	2550 2750 2600 2750
+Wire Wire Line
+	2250 2800 2550 2800
+Wire Wire Line
+	2550 2800 2550 2750
+Text GLabel 6750 5500 2    50   Input ~ 0
+MISO
+Text GLabel 6750 5800 2    50   Input ~ 0
+MOSI
+Text GLabel 6750 5700 2    50   Input ~ 0
+SCK
+Text GLabel 6750 5900 2    50   Input ~ 0
+Reset
+Wire Wire Line
+	2600 2850 2550 2850
+Wire Wire Line
+	2550 2850 2550 2800
+Connection ~ 2550 2800
+Wire Wire Line
+	2250 2900 2550 2900
+Wire Wire Line
+	2550 2900 2550 2950
+Wire Wire Line
+	2550 3050 2600 3050
+Wire Wire Line
+	2600 2950 2550 2950
+Connection ~ 2550 2950
+Wire Wire Line
+	2550 2950 2550 3050
+Text GLabel 2600 2650 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	2250 2700 2550 2700
+Wire Wire Line
+	2550 2700 2550 2650
+Wire Wire Line
+	2550 2550 2600 2550
+Wire Wire Line
+	2600 2650 2550 2650
+Connection ~ 2550 2650
+Wire Wire Line
+	2550 2650 2550 2550
+Text Notes 8900 5750 2    50   ~ 0
+FIXME add I2C resistors
+Text Notes 8900 6100 2    50   ~ 0
+FIXME add LED resistors
 $EndSCHEMATC

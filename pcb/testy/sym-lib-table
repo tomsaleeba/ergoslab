@@ -2,4 +2,7 @@
   (lib (name promicro)(type Legacy)(uri ${KIPRJMOD}/symbols/promicro.lib)(options "")(descr ""))
   (lib (name mj-4pp-9)(type Legacy)(uri ${KIPRJMOD}/symbols/mj-4pp-9.lib)(options "")(descr ""))
   (lib (name led)(type Legacy)(uri ${KIPRJMOD}/symbols/led.lib)(options "")(descr ""))
+  (lib (name conn_01x04)(type Legacy)(uri ${KIPRJMOD}/symbols/conn_01x04.lib)(options "")(descr ""))
+  (lib (name jp2)(type Legacy)(uri ${KIPRJMOD}/symbols/jp2.lib)(options "")(descr ""))
+  (lib (name conn_01x06)(type Legacy)(uri ${KIPRJMOD}/symbols/conn_01x06.lib)(options "")(descr ""))
 )
