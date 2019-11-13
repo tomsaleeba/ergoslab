@@ -61,6 +61,10 @@ is a "hello world" project to test my ideas/goals.
 - is the ARM CPU in the Ergodox Infinity the same as the Proton-C? If so, can
     we use that firmware to get split support for a controller with more flash?
 - name the board as lilydox? Maybe with a chicken silk screen?
+- look at adding separate mounting holes for the switch plate to the pcb. Might
+    be able to use bolt and nut and some M2 x 5 x 0.3mm nylon washers. The thin
+    washer should give us enough granularity to get the right height. Something
+    like [these](http://www.allfastsolutions.com.au/product/40868-nylon-flat-washer-m2-x-5-x-0-3mm).
 
 # Images
 ![pcb design](./image/pcb-design.png)
