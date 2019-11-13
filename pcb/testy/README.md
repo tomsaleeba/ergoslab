@@ -44,6 +44,14 @@ is a "hello world" project to test my ideas/goals.
       on the main section, not the snapoff
   - make sure we don't exceed max current for pin groups (100mA). I don't think
       the switches use much current so we should be ok
+  - can I drive 3 LEDs with only two pins?
+  - can I use a short (3 LEDs) WS2812B strip on the top for layer status?
+      The issue is that the OLED uses I2C and (I'm assuming) the LED strip does
+      too so if we can have separate code on the master and the slave, we can
+      have OLED on one side and layer status on the other. Maybe even just one
+      LED as we have lots of different colours.
+  - pulling from previous item: do WS2812B strips use I2C or can we drive it
+      from any old pin on the PM?
 - look at copying how Lily58 lays out the promicro area: https://github.com/kata0510/Lily58
 - add solder pads for missing switches, and diodes, so people can make external mounts and
     use them
