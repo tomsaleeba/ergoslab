@@ -73,6 +73,10 @@ is a "hello world" project to test my ideas/goals.
     be able to use bolt and nut and some M2 x 5 x 0.3mm nylon washers. The thin
     washer should give us enough granularity to get the right height. Something
     like [these](http://www.allfastsolutions.com.au/product/40868-nylon-flat-washer-m2-x-5-x-0-3mm).
+- look at making the outer columns snapoff. We can fit 0.8mm cuts between the
+    diodes, or just flip col1 so the diodes are on the inside and we'll have
+    heaps of room. Need to add extra mounting holes in between col 1 and 2. All
+    depends on being able to live with control and shift under thumbs.
 
 # Images
 ![pcb design](./image/pcb-design.png)
