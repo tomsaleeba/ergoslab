@@ -1071,11 +1071,7 @@ Connection ~ 1200 5200
 Wire Wire Line
 	1200 5200 1200 5650
 Text GLabel 1250 1900 0    50   Input ~ 0
-LED0
-Text GLabel 1250 3000 0    50   Input ~ 0
-LED1
-Text GLabel 2250 3000 2    50   Input ~ 0
-LED2
+LED
 Text GLabel 2250 4700 2    50   Input ~ 0
 LED0
 Text GLabel 2250 5200 2    50   Input ~ 0
@@ -1256,7 +1252,7 @@ SDA
 Text GLabel 1250 2400 0    50   Input ~ 0
 SCL
 Text Notes 900  1400 0    50   ~ 0
-FIXME can I use PD3 pin for driving an LED?\nAlternatively, can I drive 3 LEDs with fewer than 3 pins?
+FIXME can I use PD3 pin for driving an LED? Yes! Helix does it.\nAlternatively, can I drive 3 LEDs with fewer than 3 pins? Yes, use WS2812\n
 $Comp
 L conn_01x04:CONN_01X04 P1
 U 1 1 5DCD19CA
@@ -1552,4 +1548,8 @@ Text Notes 8900 5750 2    50   ~ 0
 FIXME add I2C resistors
 Text Notes 8900 6100 2    50   ~ 0
 FIXME add LED resistors
+NoConn ~ 2250 3000
+NoConn ~ 1250 3000
+Text Notes 2600 5050 0    50   ~ 0
+FIXME remove separate LEDs and copy helix method of driving LEDs\nHelix D3 pin config means PD3, not D3=PD0
 $EndSCHEMATC
