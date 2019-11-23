@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 1278)
+    (drawings 1279)
     (tracks 1168)
     (zones 0)
     (modules 83)
@@ -4741,6 +4741,18 @@
     (pad 1 thru_hole circle (at 1.166726 -1.166726 270) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
   )
 
+  (dimension 125.875 (width 0.12) (layer F.SilkS) (tstamp 5DCCE6AF)
+    (gr_text "125.875 mm" (at 154.4125 30.93) (layer F.SilkS) (tstamp 5DCCE6B0)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 217.35 35.35) (xy 217.35 31.613579)))
+    (feature2 (pts (xy 91.475 35.35) (xy 91.475 31.613579)))
+    (crossbar (pts (xy 91.475 32.2) (xy 217.35 32.2)))
+    (arrow1a (pts (xy 217.35 32.2) (xy 216.223496 32.786421)))
+    (arrow1b (pts (xy 217.35 32.2) (xy 216.223496 31.613579)))
+    (arrow2a (pts (xy 91.475 32.2) (xy 92.601504 32.786421)))
+    (arrow2b (pts (xy 91.475 32.2) (xy 92.601504 31.613579)))
+  )
   (gr_text "TODO add resistors for LEDs" (at 228.35 112.825) (layer Dwgs.User) (tstamp 5DCB6CE6)
     (effects (font (size 1 1) (thickness 0.15)))
   )

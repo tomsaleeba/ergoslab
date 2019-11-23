@@ -77,6 +77,11 @@ is a "hello world" project to test my ideas/goals.
     diodes, or just flip col1 so the diodes are on the inside and we'll have
     heaps of room. Need to add extra mounting holes in between col 1 and 2. All
     depends on being able to live with control and shift under thumbs.
+- I think the dimensions are on the silkscreen. If so, move them elsewhere.
+- Do I want to make the little finger column drop lower, like the Mitosis
+    keyboard? I'd have to sacrifice the row 5 key under it to keep the smaller
+    footprint but that's fine because I don't know what I'd use that key for
+    anyway.
 
 # Images
 ![pcb design](./image/pcb-design.png)
