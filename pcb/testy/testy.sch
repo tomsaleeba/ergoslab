@@ -14,28 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Switch:SW_Push SW0:0
-U 1 1 5DB779CA
-P 4450 1550
-F 0 "SW0:0" H 4450 1835 50  0000 C CNN
-F 1 "SW_Push" H 4450 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 1750 50  0001 C CNN
-F 3 "~" H 4450 1750 50  0001 C CNN
-	1    4450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D0:0
-U 1 1 5DB78529
-P 4650 1700
-F 0 "D0:0" V 4696 1621 50  0000 R CNN
-F 1 "1N4148" V 4605 1621 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 1525 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 1700 50  0001 C CNN
-	1    4650 1700
-	0    -1   -1   0   
-$EndComp
 Text GLabel 1250 2500 0    50   Input ~ 0
 Row0
 Text GLabel 2250 2300 2    50   Input ~ 0
@@ -44,10 +22,6 @@ Text GLabel 4250 950  1    50   Input ~ 0
 Col0
 Text GLabel 3650 1850 0    50   Input ~ 0
 Row0
-Wire Wire Line
-	4250 1550 4250 950 
-Wire Wire Line
-	4650 1850 3650 1850
 $Comp
 L Diode:1N4148 D0:1
 U 1 1 5DB7DFA3
@@ -59,9 +33,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 1700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5650 1850 4650 1850
-Connection ~ 4650 1850
 Text GLabel 5250 950  1    50   Input ~ 0
 Col1
 Wire Wire Line
@@ -112,20 +83,6 @@ F 3 "~" H 6350 2450 50  0001 C CNN
 	1    6350 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW1:0
-U 1 1 5DB86764
-P 4450 2250
-F 0 "SW1:0" H 4450 2535 50  0000 C CNN
-F 1 "SW_Push" H 4450 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 2450 50  0001 C CNN
-F 3 "~" H 4450 2450 50  0001 C CNN
-	1    4450 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 1550 4250 2250
-Connection ~ 4250 1550
 Wire Wire Line
 	5250 1550 5250 2250
 Connection ~ 5250 1550
@@ -169,28 +126,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 2400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1N4148 D1:0
-U 1 1 5DB89AB1
-P 4650 2400
-F 0 "D1:0" V 4696 2321 50  0000 R CNN
-F 1 "1N4148" V 4605 2321 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 2225 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 2400 50  0001 C CNN
-	1    4650 2400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5650 1850 6550 1850
-Connection ~ 5650 1850
-Wire Wire Line
-	4650 2550 5650 2550
-Connection ~ 5650 2550
 Wire Wire Line
 	5650 2550 6550 2550
-Wire Wire Line
-	4650 2550 3650 2550
-Connection ~ 4650 2550
 Text GLabel 3650 2550 0    50   Input ~ 0
 Row1
 Text GLabel 2250 2500 2    50   Input ~ 0
@@ -271,34 +210,8 @@ F 3 "" H 1750 2250 60  0001 C CNN
 $EndComp
 Text GLabel 1250 2800 0    50   Input ~ 0
 Row3
-$Comp
-L Switch:SW_Push SW2:0
-U 1 1 5DB77109
-P 4450 2950
-F 0 "SW2:0" H 4450 3235 50  0000 C CNN
-F 1 "SW_Push" H 4450 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3150 50  0001 C CNN
-F 3 "~" H 4450 3150 50  0001 C CNN
-	1    4450 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D2:0
-U 1 1 5DB77113
-P 4650 3100
-F 0 "D2:0" V 4696 3021 50  0000 R CNN
-F 1 "1N4148" V 4605 3021 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 2925 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 3100 50  0001 C CNN
-	1    4650 3100
-	0    -1   -1   0   
-$EndComp
 Text GLabel 3650 3250 0    50   Input ~ 0
 Row2
-Wire Wire Line
-	4250 2950 4250 2250
-Wire Wire Line
-	4650 3250 3650 3250
 $Comp
 L Diode:1N4148 D2:1
 U 1 1 5DB77120
@@ -310,9 +223,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 3100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5650 3250 4650 3250
-Connection ~ 4650 3250
 Wire Wire Line
 	5250 2250 5250 2950
 $Comp
@@ -359,20 +269,6 @@ F 3 "~" H 6350 3850 50  0001 C CNN
 	1    6350 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW3:0
-U 1 1 5DB77155
-P 4450 3650
-F 0 "SW3:0" H 4450 3935 50  0000 C CNN
-F 1 "SW_Push" H 4450 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3850 50  0001 C CNN
-F 3 "~" H 4450 3850 50  0001 C CNN
-	1    4450 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2950 4250 3650
-Connection ~ 4250 2950
 Wire Wire Line
 	5250 2950 5250 3650
 Connection ~ 5250 2950
@@ -414,28 +310,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 3800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1N4148 D3:0
-U 1 1 5DB77184
-P 4650 3800
-F 0 "D3:0" V 4696 3721 50  0000 R CNN
-F 1 "1N4148" V 4605 3721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 3625 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 3800 50  0001 C CNN
-	1    4650 3800
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5650 3250 6550 3250
-Connection ~ 5650 3250
-Wire Wire Line
-	4650 3950 5650 3950
-Connection ~ 5650 3950
 Wire Wire Line
 	5650 3950 6550 3950
-Wire Wire Line
-	4650 3950 3650 3950
-Connection ~ 4650 3950
 $Comp
 L Switch:SW_Push SW2:3
 U 1 1 5DB77196
@@ -494,7 +372,6 @@ Connection ~ 6550 3950
 Connection ~ 7050 2250
 Connection ~ 6150 2250
 Connection ~ 5250 2250
-Connection ~ 4250 2250
 Text GLabel 3650 3950 0    50   Input ~ 0
 Row3
 $Comp
@@ -619,39 +496,6 @@ F 3 "" H 950 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led:LED LED0
-U 1 1 5DB77E61
-P 2050 4700
-F 0 "LED0" H 2050 5021 50  0000 C CNN
-F 1 "LED" H 2050 4930 50  0000 C CNN
-F 2 "footprints:LED_D3.0mm" H 2050 4831 60  0000 C CNN
-F 3 "" H 2050 4700 60  0000 C CNN
-	1    2050 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L led:LED LED1
-U 1 1 5DB7A11B
-P 2050 5200
-F 0 "LED1" H 2050 5521 50  0000 C CNN
-F 1 "LED" H 2050 5430 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 2050 5331 60  0000 C CNN
-F 3 "" H 2050 5200 60  0000 C CNN
-	1    2050 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L led:LED LED2
-U 1 1 5DB7A4BF
-P 2050 5650
-F 0 "LED2" H 2050 5971 50  0000 C CNN
-F 1 "LED" H 2050 5880 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 2050 5781 60  0000 C CNN
-F 3 "" H 2050 5650 60  0000 C CNN
-	1    2050 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode:1N4148 D0:4
 U 1 1 5DBC630A
 P 8450 1700
@@ -680,17 +524,6 @@ F 3 "~" H 8250 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW0:5
-U 1 1 5DBC6321
-P 9150 1550
-F 0 "SW0:5" H 9150 1835 50  0000 C CNN
-F 1 "SW_Push" H 9150 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 1750 50  0001 C CNN
-F 3 "~" H 9150 1750 50  0001 C CNN
-	1    9150 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1:4
 U 1 1 5DBC632B
 P 8250 2250
@@ -701,54 +534,11 @@ F 3 "~" H 8250 2450 50  0001 C CNN
 	1    8250 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW1:5
-U 1 1 5DBC6335
-P 9150 2250
-F 0 "SW1:5" H 9150 2535 50  0000 C CNN
-F 1 "SW_Push" H 9150 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 2450 50  0001 C CNN
-F 3 "~" H 9150 2450 50  0001 C CNN
-	1    9150 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 1550 8050 2250
 Connection ~ 8050 1550
-Wire Wire Line
-	8950 1550 8950 2250
-Wire Wire Line
-	8950 1550 8950 950 
-Connection ~ 8950 1550
 Text GLabel 8950 950  1    50   Input ~ 0
 Col5
-$Comp
-L Diode:1N4148 D0:5
-U 1 1 5DBC6345
-P 9350 1700
-F 0 "D0:5" V 9396 1621 50  0000 R CNN
-F 1 "1N4148" V 9305 1621 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9350 1525 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9350 1700 50  0001 C CNN
-	1    9350 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:1N4148 D1:5
-U 1 1 5DBC634F
-P 9350 2400
-F 0 "D1:5" V 9396 2321 50  0000 R CNN
-F 1 "1N4148" V 9305 2321 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9350 2225 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9350 2400 50  0001 C CNN
-	1    9350 2400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8450 1850 9350 1850
-Connection ~ 8450 1850
-Text GLabel 9850 950  1    50   Input ~ 0
-Col6
 $Comp
 L Diode:1N4148 D2:4
 U 1 1 5DBC6398
@@ -776,17 +566,6 @@ F 3 "~" H 8250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2:5
-U 1 1 5DBC63AE
-P 9150 2950
-F 0 "SW2:5" H 9150 3235 50  0000 C CNN
-F 1 "SW_Push" H 9150 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 3150 50  0001 C CNN
-F 3 "~" H 9150 3150 50  0001 C CNN
-	1    9150 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW3:4
 U 1 1 5DBC63B8
 P 8250 3650
@@ -811,22 +590,6 @@ $EndComp
 Wire Wire Line
 	8050 2950 8050 3650
 Connection ~ 8050 2950
-Wire Wire Line
-	8950 2950 8950 3650
-Wire Wire Line
-	8950 2950 8950 2250
-Connection ~ 8950 2950
-$Comp
-L Diode:1N4148 D2:5
-U 1 1 5DBC63D1
-P 9350 3100
-F 0 "D2:5" V 9396 3021 50  0000 R CNN
-F 1 "1N4148" V 9305 3021 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9350 2925 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9350 3100 50  0001 C CNN
-	1    9350 3100
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Diode:1N4148 D3:5
 U 1 1 5DBC63DB
@@ -850,39 +613,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8450 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8450 3250 9350 3250
-Connection ~ 8450 3250
-Wire Wire Line
 	7450 3950 8450 3950
 Connection ~ 8450 3950
 Wire Wire Line
 	8450 3950 9350 3950
-$Comp
-L Switch:SW_Push SW3:6
-U 1 1 5DBC63FE
-P 10050 3650
-F 0 "SW3:6" H 10050 3935 50  0000 C CNN
-F 1 "SW_Push" H 10050 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 10050 3850 50  0001 C CNN
-F 3 "~" H 10050 3850 50  0001 C CNN
-	1    10050 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D3:6
-U 1 1 5DBC6415
-P 10250 3800
-F 0 "D3:6" V 10296 3721 50  0000 R CNN
-F 1 "1N4148" V 10205 3721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 10250 3625 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10250 3800 50  0001 C CNN
-	1    10250 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9350 3950 10250 3950
-Connection ~ 9350 3950
-Connection ~ 8950 2250
 Connection ~ 8050 2250
 Connection ~ 7450 1850
 Connection ~ 7450 2550
@@ -936,7 +670,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 4500
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5650 4650
 Wire Wire Line
 	5650 4650 6550 4650
 $Comp
@@ -995,43 +728,11 @@ $EndComp
 Wire Wire Line
 	7450 4650 8450 4650
 Connection ~ 8450 4650
-$Comp
-L Switch:SW_Push SW4:6
-U 1 1 5DBF1719
-P 10050 4350
-F 0 "SW4:6" H 10050 4635 50  0000 C CNN
-F 1 "SW_Push" H 10050 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 10050 4550 50  0001 C CNN
-F 3 "~" H 10050 4550 50  0001 C CNN
-	1    10050 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 3650 9850 4350
-$Comp
-L Diode:1N4148 D4:6
-U 1 1 5DBF1724
-P 10250 4500
-F 0 "D4:6" V 10296 4421 50  0000 R CNN
-F 1 "1N4148" V 10205 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 10250 4325 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10250 4500 50  0001 C CNN
-	1    10250 4500
-	0    -1   -1   0   
-$EndComp
 Connection ~ 7450 4650
 Connection ~ 5250 3650
 Connection ~ 6150 3650
 Connection ~ 7050 3650
 Connection ~ 8050 3650
-Connection ~ 9850 3650
-Wire Wire Line
-	9850 950  9850 3650
-Wire Wire Line
-	8450 4650 9000 4650
-Connection ~ 8450 2550
-Wire Wire Line
-	8450 2550 9350 2550
 Wire Wire Line
 	7450 2550 8450 2550
 $Comp
@@ -1045,39 +746,8 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8450 
 	1    8450 2400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5DC68F20
-P 1200 5800
-F 0 "#PWR0106" H 1200 5550 50  0001 C CNN
-F 1 "GND" H 1205 5627 50  0000 C CNN
-F 2 "" H 1200 5800 50  0001 C CNN
-F 3 "" H 1200 5800 50  0001 C CNN
-	1    1200 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 4700 1200 4700
-Wire Wire Line
-	1200 4700 1200 5200
-Wire Wire Line
-	1850 5650 1200 5650
-Connection ~ 1200 5650
-Wire Wire Line
-	1200 5650 1200 5800
-Wire Wire Line
-	1850 5200 1200 5200
-Connection ~ 1200 5200
-Wire Wire Line
-	1200 5200 1200 5650
 Text GLabel 1250 1900 0    50   Input ~ 0
 LED
-Text GLabel 2250 4700 2    50   Input ~ 0
-LED0
-Text GLabel 2250 5200 2    50   Input ~ 0
-LED1
-Text GLabel 2250 5650 2    50   Input ~ 0
-LED2
 Wire Wire Line
 	1350 6200 1650 6200
 $Comp
@@ -1131,36 +801,6 @@ Connection ~ 900  4200
 Wire Wire Line
 	900  4200 900  4250
 $Comp
-L Switch:SW_Push SW4:0
-U 1 1 5DCA6DFA
-P 4450 4350
-F 0 "SW4:0" H 4450 4635 50  0000 C CNN
-F 1 "SW_Push" H 4450 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 4550 50  0001 C CNN
-F 3 "~" H 4450 4550 50  0001 C CNN
-	1    4450 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3650 4250 4350
-$Comp
-L Diode:1N4148 D4:0
-U 1 1 5DCA6E05
-P 4650 4500
-F 0 "D4:0" V 4696 4421 50  0000 R CNN
-F 1 "1N4148" V 4605 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 4325 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 4500 50  0001 C CNN
-	1    4650 4500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3650 4650 4650 4650
-Connection ~ 4250 3650
-Connection ~ 4650 4650
-Wire Wire Line
-	4650 4650 5650 4650
-$Comp
 L Switch:SW_Push SW4:5
 U 1 1 5DCF66B6
 P 9150 4350
@@ -1185,74 +825,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9350 
 	0    -1   -1   0   
 $EndComp
 Connection ~ 8950 3650
-Connection ~ 9350 4650
-Wire Wire Line
-	9350 4650 10000 4650
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5DC944CA
-P 9350 4950
-F 0 "J1" H 9430 4942 50  0000 L CNN
-F 1 "Conn_01x02" H 9430 4851 50  0000 L CNN
-F 2 "footprints:edge-connector" H 9350 4950 50  0001 C CNN
-F 3 "~" H 9350 4950 50  0001 C CNN
-	1    9350 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4350 8950 5050
-Wire Wire Line
-	8950 5050 9100 5050
-Connection ~ 8950 4350
-Wire Wire Line
-	9000 4650 9000 4950
-Wire Wire Line
-	9000 4950 9150 4950
-Connection ~ 9000 4650
-Wire Wire Line
-	9000 4650 9350 4650
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5DC9EDA4
-P 8700 5350
-F 0 "J2" H 8618 5025 50  0000 C CNN
-F 1 "Conn_01x02" H 8618 5116 50  0000 C CNN
-F 2 "footprints:edge-connector" H 8700 5350 50  0001 C CNN
-F 3 "~" H 8700 5350 50  0001 C CNN
-	1    8700 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9100 5050 9100 5250
-Wire Wire Line
-	9100 5250 8900 5250
-Connection ~ 9100 5050
-Wire Wire Line
-	9100 5050 9150 5050
-Wire Wire Line
-	10000 4650 10000 5350
-Wire Wire Line
-	10000 5350 8900 5350
-Connection ~ 10000 4650
-Wire Wire Line
-	10000 4650 10250 4650
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DCB9C3F
-P 1950 7200
-F 0 "H1" H 2050 7246 50  0000 L CNN
-F 1 "USB-C Breakout Board" H 2050 7155 50  0000 L CNN
-F 2 "footprints:usb-c-breakout" H 1950 7200 50  0001 C CNN
-F 3 "~" H 1950 7200 50  0001 C CNN
-	1    1950 7200
-	1    0    0    -1  
-$EndComp
 Text GLabel 1250 2300 0    50   Input ~ 0
 SDA
 Text GLabel 1250 2400 0    50   Input ~ 0
 SCL
-Text Notes 900  1400 0    50   ~ 0
-FIXME can I use PD3 pin for driving an LED? Yes! Helix does it.\nAlternatively, can I drive 3 LEDs with fewer than 3 pins? Yes, use WS2812\n
 $Comp
 L conn_01x04:CONN_01X04 P1
 U 1 1 5DCD19CA
@@ -1550,6 +1126,136 @@ Text Notes 8900 6100 2    50   ~ 0
 FIXME add LED resistors
 NoConn ~ 2250 3000
 NoConn ~ 1250 3000
-Text Notes 2600 5050 0    50   ~ 0
-FIXME remove separate LEDs and copy helix method of driving LEDs\nHelix D3 pin config means PD3, not D3=PD0
+Text Notes 1250 5200 0    50   ~ 0
+FIXME add WSxxxx LED strips\nHelix D3 pin config means PD3, not D3=PD0
+Connection ~ 5650 4650
+Connection ~ 5650 3950
+Connection ~ 5650 3250
+Connection ~ 5650 2550
+Connection ~ 5650 1850
+Wire Wire Line
+	4650 3950 3650 3950
+Wire Wire Line
+	4650 3950 5650 3950
+Connection ~ 4650 3950
+$Comp
+L Diode:1N4148 D3:0
+U 1 1 5DB77184
+P 4650 3800
+F 0 "D3:0" V 4696 3721 50  0000 R CNN
+F 1 "1N4148" V 4605 3721 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 3625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3:0
+U 1 1 5DB77155
+P 4450 3650
+F 0 "SW3:0" H 4450 3935 50  0000 C CNN
+F 1 "SW_Push" H 4450 3844 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3850 50  0001 C CNN
+F 3 "~" H 4450 3850 50  0001 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3250 4650 3250
+Wire Wire Line
+	4650 3250 3650 3250
+Connection ~ 4650 3250
+$Comp
+L Diode:1N4148 D2:0
+U 1 1 5DB77113
+P 4650 3100
+F 0 "D2:0" V 4696 3021 50  0000 R CNN
+F 1 "1N4148" V 4605 3021 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 2925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2950 4250 3650
+Connection ~ 4250 2950
+$Comp
+L Switch:SW_Push SW2:0
+U 1 1 5DB77109
+P 4450 2950
+F 0 "SW2:0" H 4450 3235 50  0000 C CNN
+F 1 "SW_Push" H 4450 3144 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3150 50  0001 C CNN
+F 3 "~" H 4450 3150 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2550 3650 2550
+Wire Wire Line
+	4650 2550 5650 2550
+Connection ~ 4650 2550
+$Comp
+L Diode:1N4148 D1:0
+U 1 1 5DB89AB1
+P 4650 2400
+F 0 "D1:0" V 4696 2321 50  0000 R CNN
+F 1 "1N4148" V 4605 2321 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 2225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 2400 50  0001 C CNN
+	1    4650 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2950 4250 2250
+Connection ~ 4250 2250
+$Comp
+L Switch:SW_Push SW1:0
+U 1 1 5DB86764
+P 4450 2250
+F 0 "SW1:0" H 4450 2535 50  0000 C CNN
+F 1 "SW_Push" H 4450 2444 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 2450 50  0001 C CNN
+F 3 "~" H 4450 2450 50  0001 C CNN
+	1    4450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1850 4650 1850
+Wire Wire Line
+	4650 1850 3650 1850
+Connection ~ 4650 1850
+$Comp
+L Diode:1N4148 D0:0
+U 1 1 5DB78529
+P 4650 1700
+F 0 "D0:0" V 4696 1621 50  0000 R CNN
+F 1 "1N4148" V 4605 1621 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4650 1525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4650 1700 50  0001 C CNN
+	1    4650 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 1550 4250 2250
+Wire Wire Line
+	4250 1550 4250 950 
+Connection ~ 4250 1550
+$Comp
+L Switch:SW_Push SW0:0
+U 1 1 5DB779CA
+P 4450 1550
+F 0 "SW0:0" H 4450 1835 50  0000 C CNN
+F 1 "SW_Push" H 4450 1744 50  0000 C CNN
+F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 950  8950 3650
+Wire Wire Line
+	8450 4650 9350 4650
+Wire Wire Line
+	3650 4650 5650 4650
 $EndSCHEMATC

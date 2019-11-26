@@ -1,25 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
-#
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Diode_1N4148
 #
 DEF Diode_1N4148 D 0 40 N N 1 F N
@@ -37,21 +18,6 @@ P 2 0 1 0 50 0 -50 0 N
 P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole
-#
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -140,32 +106,6 @@ P 4 0 1 0 -40 -10 -40 -100 40 -100 40 -10 F
 P 4 0 1 0 -40 10 -40 100 40 100 40 10 F
 X G1 1 0 200 100 D 60 60 1 1 P
 X G2 2 0 -200 100 U 60 60 1 1 P
-ENDDRAW
-ENDDEF
-#
-# led_LED
-#
-DEF led_LED LED 0 40 Y N 1 F N
-F0 "LED" 0 100 50 H V C CNN
-F1 "led_LED" 0 -100 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -50 50 -50 -50 N
-P 3 0 1 0 -80 -25 -125 -65 -120 -40 N
-P 3 0 1 0 -65 -40 -110 -80 -105 -55 N
-P 3 0 1 0 50 50 -50 0 50 -50 F
-X K 1 -200 0 150 R 40 40 1 1 P
-X A 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
