@@ -26,11 +26,16 @@ is a "hello world" project to test my ideas/goals.
     and get out the way of the next row. MX are 5mm deep, choc are 2.35mm so
     the choc row should drop by 2.65mm. The top of the choc switches will be
     ~5mm above the top of the switchplate for the MX switches.
-- do we *need* that blank space for thumbs to rest?
+- do we *need* that blank space for thumbs to rest? No, resting on a switch is
+    fine.
 - should we support the switch plate or just leave it floating? The bottom of
     the switches will be better at supporting keypresses than the switch plate
     so the plate is just for alignment. We need 3.5mm spacers (for MX switches)
-    if we choose to attach the switch plate to the pcb.
+    if we choose to attach the switch plate to the pcb. Another option is to
+    have small through holes on the PCB and switch plate then use left over
+    diode legs to solder them together. Then you can either put standoffs
+    between the base and PCB, or drill out the PCB and go between the base and
+    switchplate.
 - make hole to reach reset button if it's not on the snapoff section
 - add OLED? (and pull up resistors)
 - make sure the ProMicro is set back enough that you could permanently plug a
