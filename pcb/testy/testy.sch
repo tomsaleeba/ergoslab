@@ -1041,7 +1041,7 @@ L conn_01x06:CONN_01X06 P2
 U 1 1 5DDC8800
 P 6550 5750
 F 0 "P2" H 6467 6215 50  0000 C CNN
-F 1 "iCSP" H 6467 6124 50  0000 C CNN
+F 1 "ICSP" H 6467 6124 50  0000 C CNN
 F 2 "footprints:PinHeader_1x06_P2.54mm_Vertical" H 6550 5750 50  0001 C CNN
 F 3 "" H 6550 5750 50  0000 C CNN
 	1    6550 5750
@@ -1312,10 +1312,10 @@ F 3 "" H 8750 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0114
 U 1 1 5DE2DAE3
 P 8750 5250
-F 0 "#PWR?" H 8750 5100 50  0001 C CNN
+F 0 "#PWR0114" H 8750 5100 50  0001 C CNN
 F 1 "VCC" H 8767 5423 50  0000 C CNN
 F 2 "" H 8750 5250 50  0001 C CNN
 F 3 "" H 8750 5250 50  0001 C CNN
@@ -1323,10 +1323,10 @@ F 3 "" H 8750 5250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0115
 U 1 1 5DE2E515
 P 8350 5250
-F 0 "#PWR?" H 8350 5100 50  0001 C CNN
+F 0 "#PWR0115" H 8350 5100 50  0001 C CNN
 F 1 "VCC" H 8367 5423 50  0000 C CNN
 F 2 "" H 8350 5250 50  0001 C CNN
 F 3 "" H 8350 5250 50  0001 C CNN
@@ -1337,4 +1337,8 @@ Text GLabel 8750 5550 3    50   Input ~ 0
 SCL
 Text GLabel 8350 5550 3    50   Input ~ 0
 SDA
+Text Notes 1000 4850 0    50   ~ 0
+FIXME add pin to connect LEDs on halves
+Text Notes 2050 5900 0    50   ~ 0
+FIXME footprint for LED needs to be one sided\nso we can connect each half together
 $EndSCHEMATC
