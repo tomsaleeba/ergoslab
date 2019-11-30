@@ -379,8 +379,8 @@ L mj-4pp-9:MJ-4PP-9 TRRS1
 U 1 1 5DB680F2
 P 2100 6400
 F 0 "TRRS1" H 1622 6327 60  0000 R CNN
-F 1 "MJ-4PP-9" H 1622 6433 60  0000 R CNN
-F 2 "footprints:TRRS-PJ-320A-dual" H 2050 6650 60  0001 C CNN
+F 1 "MJ-4PP-9" H 1622 6433 60  0001 R CNN
+F 2 "footprints:TRRS-helix" H 2050 6650 60  0001 C CNN
 F 3 "" H 2100 6400 60  0000 C CNN
 	1    2100 6400
 	-1   0    0    1   
@@ -1120,8 +1120,6 @@ Wire Wire Line
 Connection ~ 2550 2650
 Wire Wire Line
 	2550 2650 2550 2550
-Text Notes 9050 5700 2    50   ~ 0
-FIXME add I2C resistors
 NoConn ~ 2250 3000
 NoConn ~ 1250 3000
 Text Notes 1000 5100 0    50   ~ 0
@@ -1291,4 +1289,52 @@ F 3 "" H 1800 5200 50  0001 C CNN
 $EndComp
 Text GLabel 2000 5600 2    50   Input ~ 0
 LED
+$Comp
+L resistor:R R1
+U 1 1 5DE28F05
+P 8350 5400
+F 0 "R1" H 8420 5446 50  0000 L CNN
+F 1 "4k7" H 8420 5355 50  0000 L CNN
+F 2 "footprints:resistor" H 8420 5309 50  0001 L CNN
+F 3 "" H 8350 5400 50  0000 C CNN
+	1    8350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor:R R2
+U 1 1 5DE296C1
+P 8750 5400
+F 0 "R2" H 8820 5446 50  0000 L CNN
+F 1 "4k7" H 8820 5355 50  0000 L CNN
+F 2 "footprints:resistor" H 8820 5309 50  0001 L CNN
+F 3 "" H 8750 5400 50  0000 C CNN
+	1    8750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DE2DAE3
+P 8750 5250
+F 0 "#PWR?" H 8750 5100 50  0001 C CNN
+F 1 "VCC" H 8767 5423 50  0000 C CNN
+F 2 "" H 8750 5250 50  0001 C CNN
+F 3 "" H 8750 5250 50  0001 C CNN
+	1    8750 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DE2E515
+P 8350 5250
+F 0 "#PWR?" H 8350 5100 50  0001 C CNN
+F 1 "VCC" H 8367 5423 50  0000 C CNN
+F 2 "" H 8350 5250 50  0001 C CNN
+F 3 "" H 8350 5250 50  0001 C CNN
+	1    8350 5250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8750 5550 3    50   Input ~ 0
+SCL
+Text GLabel 8350 5550 3    50   Input ~ 0
+SDA
 $EndSCHEMATC
