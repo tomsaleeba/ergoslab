@@ -7,4 +7,5 @@
   (lib (name conn_01x06)(type Legacy)(uri ${KIPRJMOD}/symbols/conn_01x06.lib)(options "")(descr ""))
   (lib (name sk6812mini)(type Legacy)(uri ${KIPRJMOD}/symbols/sk6812mini.lib)(options "")(descr ""))
   (lib (name resistor)(type Legacy)(uri ${KIPRJMOD}/symbols/resistor.lib)(options "")(descr ""))
+  (lib (name this_keeb)(type Legacy)(uri ${KIPRJMOD}/symbols/this_keeb.lib)(options "")(descr ""))
 )

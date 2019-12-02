@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "ErgoSlab"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "1.0"
+Comp "By /u/motfalcon"
+Comment1 "MIT License"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -377,12 +377,12 @@ Row3
 $Comp
 L mj-4pp-9:MJ-4PP-9 TRRS1
 U 1 1 5DB680F2
-P 2100 6400
-F 0 "TRRS1" H 1622 6327 60  0000 R CNN
-F 1 "MJ-4PP-9" H 1622 6433 60  0001 R CNN
-F 2 "footprints:TRRS-helix" H 2050 6650 60  0001 C CNN
-F 3 "" H 2100 6400 60  0000 C CNN
-	1    2100 6400
+P 2250 7300
+F 0 "TRRS1" H 1772 7227 60  0000 R CNN
+F 1 "MJ-4PP-9" H 1772 7333 60  0001 R CNN
+F 2 "footprints:TRRS-helix" H 2200 7550 60  0001 C CNN
+F 3 "" H 2250 7300 60  0000 C CNN
+	1    2250 7300
 	-1   0    0    1   
 $EndComp
 Text GLabel 1250 2000 0    50   Input ~ 0
@@ -420,8 +420,6 @@ Text GLabel 2600 2550 2    50   Input ~ 0
 Col4
 Text GLabel 2600 2750 2    50   Input ~ 0
 Col5
-Text GLabel 2600 2950 2    50   Input ~ 0
-Col6
 Text GLabel 1250 2900 0    50   Input ~ 0
 Row4
 $Comp
@@ -439,36 +437,36 @@ Wire Wire Line
 	2250 2200 2750 2200
 Wire Wire Line
 	2750 2200 2750 1950
-Text GLabel 1350 6200 0    50   Input ~ 0
+Text GLabel 1500 7100 0    50   Input ~ 0
 data
 $Comp
 L power:VCC #PWR0103
 U 1 1 5DB7BCAC
-P 1150 6550
-F 0 "#PWR0103" H 1150 6400 50  0001 C CNN
-F 1 "VCC" H 1168 6723 50  0000 C CNN
-F 2 "" H 1150 6550 50  0001 C CNN
-F 3 "" H 1150 6550 50  0001 C CNN
-	1    1150 6550
+P 1300 7450
+F 0 "#PWR0103" H 1300 7300 50  0001 C CNN
+F 1 "VCC" H 1318 7623 50  0000 C CNN
+F 2 "" H 1300 7450 50  0001 C CNN
+F 3 "" H 1300 7450 50  0001 C CNN
+	1    1300 7450
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5DB7C36F
-P 1000 6300
-F 0 "#PWR0104" H 1000 6050 50  0001 C CNN
-F 1 "GND" H 1005 6127 50  0000 C CNN
-F 2 "" H 1000 6300 50  0001 C CNN
-F 3 "" H 1000 6300 50  0001 C CNN
-	1    1000 6300
+P 1150 7200
+F 0 "#PWR0104" H 1150 6950 50  0001 C CNN
+F 1 "GND" H 1155 7027 50  0000 C CNN
+F 2 "" H 1150 7200 50  0001 C CNN
+F 3 "" H 1150 7200 50  0001 C CNN
+	1    1150 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 6300 1650 6300
+	1150 7200 1800 7200
 Wire Wire Line
-	1650 6400 1150 6400
+	1800 7300 1300 7300
 Wire Wire Line
-	1150 6400 1150 6550
+	1300 7300 1300 7450
 $Comp
 L Switch:SW_Push SW-reset2
 U 1 1 5DB80D38
@@ -749,7 +747,7 @@ $EndComp
 Text GLabel 1250 1900 0    50   Input ~ 0
 LED
 Wire Wire Line
-	1350 6200 1650 6200
+	1500 7100 1800 7100
 $Comp
 L Switch:SW_Push SW-reset1
 U 1 1 5DBAFB80
@@ -1073,7 +1071,7 @@ Wire Wire Line
 	7000 6000 6750 6000
 Wire Wire Line
 	6750 5600 7000 5600
-Text GLabel 2600 3050 2    50   Input ~ 0
+Text GLabel 2250 2900 2    50   Input ~ 0
 MOSI
 Text GLabel 2600 2850 2    50   Input ~ 0
 MISO
@@ -1096,17 +1094,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 2850 2550 2800
 Connection ~ 2550 2800
-Wire Wire Line
-	2250 2900 2550 2900
-Wire Wire Line
-	2550 2900 2550 2950
-Wire Wire Line
-	2550 3050 2600 3050
-Wire Wire Line
-	2600 2950 2550 2950
-Connection ~ 2550 2950
-Wire Wire Line
-	2550 2950 2550 3050
 Text GLabel 2600 2650 2    50   Input ~ 0
 SCK
 Wire Wire Line
@@ -1122,8 +1109,6 @@ Wire Wire Line
 	2550 2650 2550 2550
 NoConn ~ 2250 3000
 NoConn ~ 1250 3000
-Text Notes 1000 5100 0    50   ~ 0
-FIXME add WSxxxx LED strips\nHelix D3 pin config means PD3, not D3=PD0
 Connection ~ 5650 4650
 Connection ~ 5650 3950
 Connection ~ 5650 3250
@@ -1255,39 +1240,39 @@ Wire Wire Line
 Wire Wire Line
 	3650 4650 5650 4650
 $Comp
-L sk6812mini:SK6812mini LED1
+L sk6812mini:SK6812mini LED_L1
 U 1 1 5DE1DE41
-P 1700 5500
-F 0 "LED1" H 2044 5500 60  0000 L CNN
-F 1 "SK6812mini" H 2044 5447 39  0001 L CNN
-F 2 "footprints:ws2812-single" H 2044 5447 60  0001 L CNN
-F 3 "" H 1700 5500 60  0000 C CNN
-	1    1700 5500
-	1    0    0    -1  
+P 2050 5100
+F 0 "LED_L1" H 2050 4850 60  0000 L CNN
+F 1 "SK6812mini" H 2394 5047 39  0001 L CNN
+F 2 "footprints:ws2812-single" H 2394 5047 60  0001 L CNN
+F 3 "" H 2050 5100 60  0000 C CNN
+	1    2050 5100
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0112
 U 1 1 5DE1F507
-P 1600 5800
-F 0 "#PWR0112" H 1600 5550 50  0001 C CNN
-F 1 "GND" H 1605 5627 50  0000 C CNN
-F 2 "" H 1600 5800 50  0001 C CNN
-F 3 "" H 1600 5800 50  0001 C CNN
-	1    1600 5800
-	1    0    0    -1  
+P 2150 4800
+F 0 "#PWR0112" H 2150 4550 50  0001 C CNN
+F 1 "GND" H 2155 4627 50  0000 C CNN
+F 2 "" H 2150 4800 50  0001 C CNN
+F 3 "" H 2150 4800 50  0001 C CNN
+	1    2150 4800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR0113
 U 1 1 5DE241AF
-P 1800 5200
-F 0 "#PWR0113" H 1800 5050 50  0001 C CNN
-F 1 "VCC" H 1818 5373 50  0000 C CNN
-F 2 "" H 1800 5200 50  0001 C CNN
-F 3 "" H 1800 5200 50  0001 C CNN
-	1    1800 5200
-	0    1    1    0   
+P 1950 5400
+F 0 "#PWR0113" H 1950 5250 50  0001 C CNN
+F 1 "VCC" H 1968 5573 50  0000 C CNN
+F 2 "" H 1950 5400 50  0001 C CNN
+F 3 "" H 1950 5400 50  0001 C CNN
+	1    1950 5400
+	0    -1   -1   0   
 $EndComp
-Text GLabel 2000 5600 2    50   Input ~ 0
+Text GLabel 900  5600 0    50   Input ~ 0
 LED
 $Comp
 L resistor:R R1
@@ -1337,8 +1322,184 @@ Text GLabel 8750 5550 3    50   Input ~ 0
 SCL
 Text GLabel 8350 5550 3    50   Input ~ 0
 SDA
-Text Notes 1000 4850 0    50   ~ 0
-FIXME add pin to connect LEDs on halves
-Text Notes 2050 5900 0    50   ~ 0
-FIXME footprint for LED needs to be one sided\nso we can connect each half together
+$Comp
+L sk6812mini:SK6812mini LED_R1
+U 1 1 5DE5B1E3
+P 2050 6350
+F 0 "LED_R1" H 2050 6100 60  0000 L CNN
+F 1 "SK6812mini" H 2394 6297 39  0001 L CNN
+F 2 "footprints:ws2812-single" H 2394 6297 60  0001 L CNN
+F 3 "" H 2050 6350 60  0000 C CNN
+	1    2050 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L jp2:JP2 JP9
+U 1 1 5DE66916
+P 2000 5650
+F 0 "JP9" V 1887 5650 50  0001 C CNN
+F 1 "L_NOLED" V 1895 5650 40  0000 C CNN
+F 2 "footprints:Jumper" H 2000 5650 60  0001 C CNN
+F 3 "" H 2000 5650 60  0000 C CNN
+	1    2000 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 5DEA253C
+P 1950 6650
+F 0 "#PWR0116" H 1950 6500 50  0001 C CNN
+F 1 "VCC" H 1968 6823 50  0000 C CNN
+F 2 "" H 1950 6650 50  0001 C CNN
+F 3 "" H 1950 6650 50  0001 C CNN
+	1    1950 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5DEA2986
+P 2150 6050
+F 0 "#PWR0117" H 2150 5800 50  0001 C CNN
+F 1 "GND" H 2155 5877 50  0000 C CNN
+F 2 "" H 2150 6050 50  0001 C CNN
+F 3 "" H 2150 6050 50  0001 C CNN
+	1    2150 6050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3200 5750 0    50   Input ~ 0
+SLAVE_LED
+$Comp
+L jp2:JP2 JP12
+U 1 1 5DF1D947
+P 2000 5900
+F 0 "JP12" V 1887 5900 50  0001 C CNN
+F 1 "R_NOLED" V 1895 5900 40  0000 C CNN
+F 2 "footprints:Jumper" H 2000 5900 60  0001 C CNN
+F 3 "" H 2000 5900 60  0000 C CNN
+	1    2000 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 5000 1350 5600
+Wire Wire Line
+	1350 5600 900  5600
+Connection ~ 1350 5600
+Wire Wire Line
+	1350 5600 1350 5650
+Wire Wire Line
+	1350 5650 1800 5650
+Connection ~ 1350 5650
+Wire Wire Line
+	1350 5650 1350 5900
+Wire Wire Line
+	1800 5900 1350 5900
+Connection ~ 1350 5900
+Wire Wire Line
+	1350 5900 1350 6250
+Wire Wire Line
+	2200 5900 2750 5900
+Wire Wire Line
+	2200 5650 2750 5650
+Text GLabel 1800 7450 0    50   Input ~ 0
+SLAVE_LED
+$Comp
+L this_keeb:Conn_01x03 J1
+U 1 1 5DFA561C
+P 3350 5250
+F 0 "J1" H 3430 5292 50  0000 L CNN
+F 1 "L_XLED" H 3430 5201 50  0000 L CNN
+F 2 "footprints:ws2812-strip" H 3350 5250 50  0001 C CNN
+F 3 "~" H 3350 5250 50  0001 C CNN
+	1    3350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L this_keeb:Conn_01x01 J3
+U 1 1 5DFA6160
+P 3400 5750
+F 0 "J3" H 3480 5792 50  0000 L CNN
+F 1 "SLAVE_LED" H 3480 5701 50  0000 L CNN
+F 2 "footprints:PinHeader_1x01_P2.54mm_Vertical" H 3400 5750 50  0001 C CNN
+F 3 "~" H 3400 5750 50  0001 C CNN
+	1    3400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0118
+U 1 1 5DFA6713
+P 3150 5150
+F 0 "#PWR0118" H 3150 5000 50  0001 C CNN
+F 1 "VCC" H 3168 5323 50  0000 C CNN
+F 2 "" H 3150 5150 50  0001 C CNN
+F 3 "" H 3150 5150 50  0001 C CNN
+	1    3150 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5DFA9A7A
+P 3150 5350
+F 0 "#PWR0119" H 3150 5100 50  0001 C CNN
+F 1 "GND" H 3155 5177 50  0000 C CNN
+F 2 "" H 3150 5350 50  0001 C CNN
+F 3 "" H 3150 5350 50  0001 C CNN
+	1    3150 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 5900 2750 6200
+Wire Wire Line
+	2750 5200 2750 5250
+$Comp
+L this_keeb:Conn_01x03 J2
+U 1 1 5DFBF789
+P 3350 6200
+F 0 "J2" H 3430 6242 50  0000 L CNN
+F 1 "R_XLED" H 3430 6151 50  0000 L CNN
+F 2 "footprints:ws2812-strip" H 3350 6200 50  0001 C CNN
+F 3 "~" H 3350 6200 50  0001 C CNN
+	1    3350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0120
+U 1 1 5DFBF78F
+P 3150 6100
+F 0 "#PWR0120" H 3150 5950 50  0001 C CNN
+F 1 "VCC" H 3168 6273 50  0000 C CNN
+F 2 "" H 3150 6100 50  0001 C CNN
+F 3 "" H 3150 6100 50  0001 C CNN
+	1    3150 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5DFBF795
+P 3150 6300
+F 0 "#PWR0121" H 3150 6050 50  0001 C CNN
+F 1 "GND" H 3155 6127 50  0000 C CNN
+F 2 "" H 3150 6300 50  0001 C CNN
+F 3 "" H 3150 6300 50  0001 C CNN
+	1    3150 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 5250 2750 5250
+Connection ~ 2750 5250
+Wire Wire Line
+	2750 5250 2750 5650
+Wire Wire Line
+	3150 6200 2750 6200
+Connection ~ 2750 6200
+Wire Wire Line
+	2750 6200 2750 6450
+NoConn ~ 2250 1900
+Wire Wire Line
+	2750 5200 2350 5200
+Wire Wire Line
+	1750 5000 1350 5000
+Wire Wire Line
+	1750 6250 1350 6250
+Wire Wire Line
+	2350 6450 2750 6450
 $EndSCHEMATC
