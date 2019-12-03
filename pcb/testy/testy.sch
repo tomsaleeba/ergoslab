@@ -580,7 +580,7 @@ U 1 1 5DBC63C2
 P 9150 3650
 F 0 "SW3:5" H 9150 3935 50  0000 C CNN
 F 1 "SW_Push" H 9150 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 9150 3850 50  0001 C CNN
 F 3 "~" H 9150 3850 50  0001 C CNN
 	1    9150 3650
 	1    0    0    -1  
@@ -626,7 +626,7 @@ U 1 1 5DBF1690
 P 5450 4350
 F 0 "SW4:1" H 5450 4635 50  0000 C CNN
 F 1 "SW_Push" H 5450 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 5450 4550 50  0001 C CNN
+F 2 "footprints:kailh-choc-solder-reversible" H 5450 4550 50  0001 C CNN
 F 3 "~" H 5450 4550 50  0001 C CNN
 	1    5450 4350
 	1    0    0    -1  
@@ -637,7 +637,7 @@ U 1 1 5DBF169A
 P 6350 4350
 F 0 "SW4:2" H 6350 4635 50  0000 C CNN
 F 1 "SW_Push" H 6350 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 6350 4550 50  0001 C CNN
+F 2 "footprints:kailh-choc-solder-reversible" H 6350 4550 50  0001 C CNN
 F 3 "~" H 6350 4550 50  0001 C CNN
 	1    6350 4350
 	1    0    0    -1  
@@ -676,7 +676,7 @@ U 1 1 5DBF16D4
 P 7250 4350
 F 0 "SW4:3" H 7250 4635 50  0000 C CNN
 F 1 "SW_Push" H 7250 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 7250 4550 50  0001 C CNN
+F 2 "footprints:kailh-choc-solder-reversible" H 7250 4550 50  0001 C CNN
 F 3 "~" H 7250 4550 50  0001 C CNN
 	1    7250 4350
 	1    0    0    -1  
@@ -705,7 +705,7 @@ U 1 1 5DBF16EC
 P 8250 4350
 F 0 "SW4:4" H 8250 4635 50  0000 C CNN
 F 1 "SW_Push" H 8250 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 8250 4550 50  0001 C CNN
+F 2 "footprints:kailh-choc-solder-reversible" H 8250 4550 50  0001 C CNN
 F 3 "~" H 8250 4550 50  0001 C CNN
 	1    8250 4350
 	1    0    0    -1  
@@ -804,7 +804,7 @@ U 1 1 5DCF66B6
 P 9150 4350
 F 0 "SW4:5" H 9150 4635 50  0000 C CNN
 F 1 "SW_Push" H 9150 4544 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 9150 4550 50  0001 C CNN
+F 2 "footprints:kailh-choc-solder-reversible" H 9150 4550 50  0001 C CNN
 F 3 "~" H 9150 4550 50  0001 C CNN
 	1    9150 4350
 	1    0    0    -1  
