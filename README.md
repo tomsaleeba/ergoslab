@@ -75,9 +75,6 @@ material so I'm also storing these files as I gather quotes.
   - (optional) 2x SparkFun USB-C breakout boards
   - (optional) 2x USB micro cables to wire the Pro Micro to the breakout board
 
-## The switch plate
-![switch plate](./switch-plate.png)
-
 ## Open questions
   1. do we need [pull up
      resistors](https://beta.docs.qmk.fm/features/feature_split_keyboard#required-hardware) for communication between the two halves?
@@ -108,11 +105,6 @@ but here's some mentions of it around the internet:
 [link](https://www.instagram.com/p/BtsCKRRgETS/).
 
 ## FAQ
-**Is there a PCB?**\
-Not yet. I haven't yet learned how to design PCBs yet (still learning the CAD
-for the switch plate). Once I've tried the layout with a handwired prototype, I
-might tackle the PCB.
-
 **Do you have keyboard-layout-editor source?**\
-Yes. Either [this file](./keyboard-layout-editor-config.txt) in this repo or here's a (hopefully up to date)
-[permalink](http://www.keyboard-layout-editor.com/##@@_y:1&x:3;&=E&_x:8.75;&=I;&@_y:-0.875&x:2;&=W&_x:1;&=R&_x:6.75;&=U&_x:1;&=O;&@_y:-0.875&x:5;&=T&_x:4.75;&=Y;&@_y:-0.875;&=%7C%0A%5C&=Q&_x:12.75;&=P&_a:7;&=;&@_y:-0.375&x:3&a:4;&=D&_x:8.75;&=K;&@_y:-0.875&x:2;&=S&_x:1;&=F&_x:6.75;&=J&_x:1;&=L;&@_y:-0.875&x:5;&=G&_x:4.75;&=H;&@_y:-0.875;&=Tab&=A&_x:12.75;&=/:%0A/;&=%22%0A';&@_y:-0.375&x:3;&=C&_x:8.75;&=%3C%0A,;&@_y:-0.875&x:2;&=X&_x:1;&=V&_x:6.75;&=M&_x:1;&=%3E%0A.;&@_y:-0.875&x:5;&=B&_x:4.75;&=N;&@_y:-0.875;&=Shift&=Z&_x:12.75;&=?%0A//&=Shift;&@_y:-0.375&x:3;&=Del&_x:8.75&a:7;&=%E2%86%93;&@_y:-0.875&x:2&a:4;&=Alt&_x:1;&=L2&_x:6.75&a:7;&=%E2%86%90&_x:1;&=%E2%86%91;&@_y:-0.75&a:4;&=Ctrl&=Leader&_x:12.75&a:7;&=%E2%86%92&=;&@_r:10&rx:12&ry:4.5&x:-1.25&a:4;&=Space;&@_y:-0.5&x:-2.25&a:7;&=;&@_x:-2.5&a:4;&=Enter%0AGUI;&@_r:-10&rx:4.75&x:0.25;&=Bksp;&@_y:-0.5&x:1.25&a:7;&=;&@_x:1.5&a:4;&=L1%0AEsc).
+Yes. Either [this file](./layout.kle) in this repo or here's a (hopefully up to date)
+[permalink](http://www.keyboard-layout-editor.com/##@@_x:3&t=#000000%0A%0A#115219;&=E%0A%0A#&_x:9.75&t=#000000%0A%0A#115219%0A#9914a6;&=I%0A%0A*%0A%7D;&@_y:-0.875&x:2&t=#000000%0A%0A#115219;&=W%0A%0A/@&_x:1;&=R%0A%0A$&_x:7.75&t=#000000%0A%0A#115219%0A#9914a6;&=U%0A%0A/&%0A%7B&_x:1&t=#000000%0A%0A#115219;&=O%0A%0A';&@_y:-0.875&x:5;&=T%0A%0A%25&_x:5.75;&=Y%0A%0A%5E;&@_y:-0.625&x:1;&=Q%0A%0A!&_x:13.75;&=P%0A%0A%22;&@_y:-0.625&x:3;&=D%0A%0A3&_x:9.75&t=#000000%0A%0A#115219%0A#9914a6;&=K%0A%0A8%0A);&@_y:-0.875&x:2&t=#000000%0A%0A#115219;&=S%0A%0A2&_x:1;&=F%0A%0A4&_x:7.75&t=#000000%0A%0A#115219%0A#9914a6;&=J%0A%0A7%0A(&_x:1&t=#000000%0A%0A#115219;&=L%0A%0A9;&@_y:-0.875&x:5;&=G%0A%0A5&_x:5.75;&=H%0A%0A6;&@_y:-0.625&x:1;&=A%0A%0A1&_x:13.75;&=/:%0A/;%0A0;&@_y:-0.625&x:3&t=#000000%0A#0b458a%0A#115219;&=C%0A%0A+&_x:9.75&t=#000000%0A%0A#115219%0A#9914a6;&=%3C%0A,%0A%0A%5D;&@_y:-0.875&x:2&t=#000000%0A#0b458a%0A#115219;&=X%0A%0A-&_x:1;&=V%0A%0A/=&_x:7.75&t=#000000%0A%0A#115219%0A#9914a6;&=M%0A%0A~%0A%5B&_x:1&t=#000000;&=%3E%0A.;&@_y:-0.875&x:5&t=#000000%0A%0A#115219;&=B%0A%0A%60&_x:5.75;&=N%0A%0A/:;&@_y:-0.625&x:1&t=#000000%0A#0b458a%0A#115219;&=Z%0A%0A/_&_x:13.75&t=#000000;&=?%0A//;&@_y:-0.625&x:3;&=Del&_x:9.75&t=#000000%0A%0A%0A#9914a6;&=%0A%0A%0A%3E%0A%0A%0A%0A%0A%0A%E2%86%93;&@_y:-0.875&x:2&t=#000000;&=Alt&_x:1;&=GUI%0AEnter&_x:7.75&t=#000000%0A%0A%0A#9914a6;&=%0A%0A%0A%3C%0A%0A%0A%0A%0A%0A%E2%86%90&_x:1&t=#000000&a:7;&=%E2%86%91;&@_y:-0.875&x:5&a:4;&=Shift&=Ctrl&_x:3.75&t=#115219;&=Numb%0AEnter&_t=#000000;&=Space;&@_y:-0.625&x:1;&=Leader&_x:13.75&a:7;&=%E2%86%92;&@_y:-0.375&x:2;&=&_a:4;&=Swap&_t=#000000%0A#0b458a;&=Esc&_t=#ab0202;&=Media&_t=#9914a6;&=Brkt&_x:3.75&t=#000000;&=Tab&=AltTab&=Bspc&=Swap&_a:7;&=).
