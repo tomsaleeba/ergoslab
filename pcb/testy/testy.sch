@@ -45,7 +45,7 @@ U 1 1 5DB80557
 P 5450 1550
 F 0 "SW0:1" H 5450 1835 50  0000 C CNN
 F 1 "SW_Push" H 5450 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 5450 1750 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 5450 1750 50  0001 C CNN
 F 3 "~" H 5450 1750 50  0001 C CNN
 	1    5450 1550
 	1    0    0    -1  
@@ -56,7 +56,7 @@ U 1 1 5DB847CB
 P 6350 1550
 F 0 "SW0:2" H 6350 1835 50  0000 C CNN
 F 1 "SW_Push" H 6350 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 6350 1750 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 6350 1750 50  0001 C CNN
 F 3 "~" H 6350 1750 50  0001 C CNN
 	1    6350 1550
 	1    0    0    -1  
@@ -67,7 +67,7 @@ U 1 1 5DB85CD1
 P 5450 2250
 F 0 "SW1:1" H 5450 2535 50  0000 C CNN
 F 1 "SW_Push" H 5450 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 5450 2450 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 5450 2450 50  0001 C CNN
 F 3 "~" H 5450 2450 50  0001 C CNN
 	1    5450 2250
 	1    0    0    -1  
@@ -78,7 +78,7 @@ U 1 1 5DB863E0
 P 6350 2250
 F 0 "SW1:2" H 6350 2535 50  0000 C CNN
 F 1 "SW_Push" H 6350 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 6350 2450 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 6350 2450 50  0001 C CNN
 F 3 "~" H 6350 2450 50  0001 C CNN
 	1    6350 2250
 	1    0    0    -1  
@@ -142,7 +142,7 @@ U 1 1 5DB657D9
 P 7250 1550
 F 0 "SW0:3" H 7250 1835 50  0000 C CNN
 F 1 "SW_Push" H 7250 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 7250 1750 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 7250 1750 50  0001 C CNN
 F 3 "~" H 7250 1750 50  0001 C CNN
 	1    7250 1550
 	1    0    0    -1  
@@ -153,7 +153,7 @@ U 1 1 5DB657E3
 P 7250 2250
 F 0 "SW1:3" H 7250 2535 50  0000 C CNN
 F 1 "SW_Push" H 7250 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 7250 2450 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 7250 2450 50  0001 C CNN
 F 3 "~" H 7250 2450 50  0001 C CNN
 	1    7250 2250
 	1    0    0    -1  
@@ -231,7 +231,7 @@ U 1 1 5DB7712D
 P 5450 2950
 F 0 "SW2:1" H 5450 3235 50  0000 C CNN
 F 1 "SW_Push" H 5450 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 5450 3150 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 5450 3150 50  0001 C CNN
 F 3 "~" H 5450 3150 50  0001 C CNN
 	1    5450 2950
 	1    0    0    -1  
@@ -242,7 +242,7 @@ U 1 1 5DB77137
 P 6350 2950
 F 0 "SW2:2" H 6350 3235 50  0000 C CNN
 F 1 "SW_Push" H 6350 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 6350 3150 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 6350 3150 50  0001 C CNN
 F 3 "~" H 6350 3150 50  0001 C CNN
 	1    6350 2950
 	1    0    0    -1  
@@ -253,7 +253,7 @@ U 1 1 5DB77141
 P 5450 3650
 F 0 "SW3:1" H 5450 3935 50  0000 C CNN
 F 1 "SW_Push" H 5450 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 5450 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 5450 3850 50  0001 C CNN
 F 3 "~" H 5450 3850 50  0001 C CNN
 	1    5450 3650
 	1    0    0    -1  
@@ -264,7 +264,7 @@ U 1 1 5DB7714B
 P 6350 3650
 F 0 "SW3:2" H 6350 3935 50  0000 C CNN
 F 1 "SW_Push" H 6350 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 6350 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 6350 3850 50  0001 C CNN
 F 3 "~" H 6350 3850 50  0001 C CNN
 	1    6350 3650
 	1    0    0    -1  
@@ -320,7 +320,7 @@ U 1 1 5DB77196
 P 7250 2950
 F 0 "SW2:3" H 7250 3235 50  0000 C CNN
 F 1 "SW_Push" H 7250 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 7250 3150 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 7250 3150 50  0001 C CNN
 F 3 "~" H 7250 3150 50  0001 C CNN
 	1    7250 2950
 	1    0    0    -1  
@@ -331,7 +331,7 @@ U 1 1 5DB771A0
 P 7250 3650
 F 0 "SW3:3" H 7250 3935 50  0000 C CNN
 F 1 "SW_Push" H 7250 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 7250 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 7250 3850 50  0001 C CNN
 F 3 "~" H 7250 3850 50  0001 C CNN
 	1    7250 3650
 	1    0    0    -1  
@@ -516,7 +516,7 @@ U 1 1 5DBC6317
 P 8250 1550
 F 0 "SW0:4" H 8250 1835 50  0000 C CNN
 F 1 "SW_Push" H 8250 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 8250 1750 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 8250 1750 50  0001 C CNN
 F 3 "~" H 8250 1750 50  0001 C CNN
 	1    8250 1550
 	1    0    0    -1  
@@ -527,7 +527,7 @@ U 1 1 5DBC632B
 P 8250 2250
 F 0 "SW1:4" H 8250 2535 50  0000 C CNN
 F 1 "SW_Push" H 8250 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 8250 2450 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 8250 2450 50  0001 C CNN
 F 3 "~" H 8250 2450 50  0001 C CNN
 	1    8250 2250
 	1    0    0    -1  
@@ -558,7 +558,7 @@ U 1 1 5DBC63A4
 P 8250 2950
 F 0 "SW2:4" H 8250 3235 50  0000 C CNN
 F 1 "SW_Push" H 8250 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 8250 3150 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 8250 3150 50  0001 C CNN
 F 3 "~" H 8250 3150 50  0001 C CNN
 	1    8250 2950
 	1    0    0    -1  
@@ -569,7 +569,7 @@ U 1 1 5DBC63B8
 P 8250 3650
 F 0 "SW3:4" H 8250 3935 50  0000 C CNN
 F 1 "SW_Push" H 8250 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 8250 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 8250 3850 50  0001 C CNN
 F 3 "~" H 8250 3850 50  0001 C CNN
 	1    8250 3650
 	1    0    0    -1  
@@ -1125,7 +1125,7 @@ U 1 1 5DB77155
 P 4450 3650
 F 0 "SW3:0" H 4450 3935 50  0000 C CNN
 F 1 "SW_Push" H 4450 3844 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3850 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 4450 3850 50  0001 C CNN
 F 3 "~" H 4450 3850 50  0001 C CNN
 	1    4450 3650
 	1    0    0    -1  
@@ -1155,7 +1155,7 @@ U 1 1 5DB77109
 P 4450 2950
 F 0 "SW2:0" H 4450 3235 50  0000 C CNN
 F 1 "SW_Push" H 4450 3144 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 3150 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 4450 3150 50  0001 C CNN
 F 3 "~" H 4450 3150 50  0001 C CNN
 	1    4450 2950
 	1    0    0    -1  
@@ -1185,7 +1185,7 @@ U 1 1 5DB86764
 P 4450 2250
 F 0 "SW1:0" H 4450 2535 50  0000 C CNN
 F 1 "SW_Push" H 4450 2444 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 2450 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 4450 2450 50  0001 C CNN
 F 3 "~" H 4450 2450 50  0001 C CNN
 	1    4450 2250
 	1    0    0    -1  
@@ -1217,7 +1217,7 @@ U 1 1 5DB779CA
 P 4450 1550
 F 0 "SW0:0" H 4450 1835 50  0000 C CNN
 F 1 "SW_Push" H 4450 1744 50  0000 C CNN
-F 2 "footprints:kailh-socket-and-choc-solder-reversible" H 4450 1750 50  0001 C CNN
+F 2 "footprints:Kailh_socket_reversible" H 4450 1750 50  0001 C CNN
 F 3 "~" H 4450 1750 50  0001 C CNN
 	1    4450 1550
 	1    0    0    -1  
