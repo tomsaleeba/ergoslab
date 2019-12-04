@@ -1,8 +1,10 @@
-> my end game keyboard... I hope
+> a columnar stagged keyboard that uses a combination of MX and Kailh choc
+> switches to pack in a heap of thumb keys
 
 **Beware: I haven't built this yet. So I guess it might not work**
 
 ![keyboard layout](./layout.png)
+![PCB](./render-pcb.png)
 
 ## What is this thing?
 I've been using an ErgoDox as my only keyboard for quite a few years now and I
@@ -13,96 +15,54 @@ been exploring keyboards with less keys. There are so many candidates
 [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
 *exactly* what I want, so why not build my own!
 
-I know the sticking out thumb cluster affects portability a bit but I'm totally
-willing to make that tradeoff for a more useful keyboard.
-
-As this will be the first board I've built from scratch, I'll try to piggy back
-on existing an QMK keyboard that already has a strong community; I'm thinking
-the ErgoTravel.
-
-## Repo layout
-The `master.dxf` file is the source of truth for the switch plate. It contains
-both the top and bottom plates (the bottom is a subset of the top). The
-`derived-cad` directory contains files that have been *derived* from the
-master, as a convenience. And so multiple people don't have to repeat the same
-work.
-
-Some CAD cutters want you to put your designs in context of a sheet of their
-material so I'm also storing these files as I gather quotes.
-
 ## Desgin choices:
-  - ErgoDox style ortho-columnar
+  - ErgoDox style ortho-columnar but with the extra little finger offset of the
+      [Diverge 3](https://unikeyboard.io/product/diverge-3/)
   - Make all thumb keys easily accessible from the normal hand position
-  - keep my vim-style arrows on the right hand, and directly below the home row
+  - keys for vim-style arrows on the right hand, and directly below the home row
   - same plate design for both halves
-  - leverage QMK layout from an existing keyboard if possible. Any 4x6 or 4x7 layout
-      is a contender:
-      [ErgoTravel](https://github.com/jpconstantineau/ErgoTravel),
-      [Ergo42](https://github.com/Biacco42/Ergo42),
-      [Runner3680](https://github.com/omkbd/Runner3680)
+  - uses QMK firmware
   - layer status LEDs
-  - those large, pink keys are placeholders for the pro micros
-  - the thumb keys are rotated the opposite way to what you'd think because
-    they pack tighter (make a smaller footprint) and still feel ok
   - minimise overall footprint by using internal standoffs (thanks for the idea
       ErgoTravel)
-  - mounting holes for a SwanMatch Moge Naide [Pro Micro socket](#pro-micro-socket)
-      in either orientation.  So you can either plug directly into your Pro
-      Micro, or mount it reverse and wire it to a USB breakout board. This way
-      you can run USB-C via a breakout board even if your Pro Micro doesn't
-      support it. Plus, if you break a connector, it's only the breakout board.
-  - mounting holes for the [SparkFun USB-C breakout
-      board](https://github.com/sparkfun/USB-C-Breakout/)
   - use only 1U key caps to minimise size and because stabilisers are annoying
+  - One PCB design that works as all 3 layers of a sandwich design: base, PCB and
+    switch plate. Idea taken from [for-split-keyboard](https://github.com/peej/for-split-keyboard)
+  - support 5 pin switches
 
 ## Parts list
-  - 2x top plates
-  - 2x bottom plates
-  - 2x pro micros
-  - 2x [pro micro sockets](#pro-micro-socket)
+  - 6x PCBs, as the same design is used for base, PCB and switch plate
+  - 2x Pro Micros
+  - 2x Pro Micro sockets
   - 2x TRRS connectors
   - 1x TRRS cable
   - 2x reset switches
-  - 50x key switches
-  - 50x 1U key caps
-  - 50x 1N4148 diodes
-  - 2x 4.7kΩ pull-up resistors
-  - 6x 3mm LEDs, for layer status
-  - 18x 7mm hex M2 standoffs (11 per side), for between top and bottom plates
+  - 42x MX (or compatible) switches
+  - 42x Kailh hotswap sockets
+  - 10x Kailh choc switches
+  - 42x 1U MX key caps
+  - 10x 1U Kailh choc key caps
+  - 52x 1N4148 diodes
+  - (optional) 2x WS2812 LED from a 144 LEDs/m strip, for layer status
+  - 18x 8mm hex M2 standoffs (9 per side), for between switch and bottom plates
   - 36x 4mm M2 screws (18 per side)
-  - 8x 3mm M2 standoffs (4 per side), for mounting the Pro Micro sockets
+  - 8x 4mm M2 standoffs (4 per side), for both mounting the OLED acrylic cover
+      and mounting the bottom switch row section of PCB to the base plate
   - 16x 2mm M2 screws (8 per side)
-  - (optional) 2x SparkFun USB-C breakout boards
-  - (optional) 2x USB micro cables to wire the Pro Micro to the breakout board
+  - (optional) 1 or 2 OLED screens
+  - (optional) 2x 4.7kΩ pull-up resistors for OLED I2C
 
-## Open questions
-  1. do we need [pull up
-     resistors](https://beta.docs.qmk.fm/features/feature_split_keyboard#required-hardware) for communication between the two halves?
-  1. what length standoffs/screws do we need between the top and bottom?
-  1. what length standoffs/screws do we need between the Pro Micro sockets and the
-     top/bottom?
-  1. will layer status LEDs clear keycaps
-  1. can we have no top plate over the pro micro to keep the whole board
-     thinner, like the crkbd?
-  1. if I fork the crkbd, can we use the backlight LEDs as layer status
-     indicators? Or do we still need to add layer LEDs separately?
+# Parts
+- 2x PJ-3200B-4A [link](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) (PJ-320A is discontinued)
 
-## Answered questions
-  1. can I get the same "only flash master" behaviour as the Ergodox EZ by
-     using a [MCP23018-E/SP I/O expander](https://www.ergodox.io/#electronics)
-     on the slave side? Yes, but it's not worth it as it'll be slow.
-     [link](https://www.reddit.com/r/olkb/comments/bdchr5/hardware_options/el2b9s9/)
-     [link](https://www.reddit.com/r/olkb/comments/a8y8mv/help_using_an_io_expander_with_qmk/ecro8p5/)
-
-## Pro Micro socket
-I'll be using [these](./misc/swanmatch-moge-naide.jpg) Pro Micro sockets.
-They're labelled with SwanMatch and Moge Naide. SwanMatch is a
-[person](https://github.com/swanmatch) but I'm unsure what Moge Naide means.
-I'm guessing it's the name of the PCB?  I can't find a GitHub repo for the PCB,
-but here's some mentions of it around the internet:
-[link](https://booth.pm/ja/items/1073313)
-[link](https://twitter.com/swan_match/status/1034413919882731521)
-[link](https://www.instagram.com/p/BtsCKRRgETS/).
+# Credit for Kicad symbols/footprints
+- [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
+- [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
+- [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
+- [TRRS footprint](https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A-dual.kicad_mod)
+- [LED symbol](https://github.com/tmk/kicad_lib_tmk)
+- LED and diode footprints from built in Kicad library
+- [footprints: 4 pin TACT reset, promicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/master/Library/footprints.pretty)
 
 ## FAQ
 **Do you have keyboard-layout-editor source?**\
