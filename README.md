@@ -21,13 +21,15 @@ been exploring keyboards with less keys. There are so many candidates
   - Make all thumb keys easily accessible from the normal hand position
   - keys for vim-style arrows on the right hand, and directly below the home row
   - same plate design for both halves
-  - uses QMK firmware
+  - compatible with QMK firmware
   - layer status LEDs
   - minimise overall footprint by using internal standoffs (thanks for the idea
-      ErgoTravel)
+      [ErgoTravel](https://github.com/jpconstantineau/ErgoTravel))
   - use only 1U key caps to minimise size and because stabilisers are annoying
   - One PCB design that works as all 3 layers of a sandwich design: base, PCB and
-    switch plate. Idea taken from [for-split-keyboard](https://github.com/peej/for-split-keyboard)
+    switch plate. Idea taken from
+    [for-split-keyboard](https://github.com/peej/for-split-keyboard) and
+    [mitosis](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/)
   - support 5 pin switches
 
 ## Parts list
@@ -56,13 +58,12 @@ been exploring keyboards with less keys. There are so many candidates
 - 2x PJ-3200B-4A [link](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) (PJ-320A is discontinued)
 
 # Credit for Kicad symbols/footprints
-- [Kailh reversible footprint](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
+- [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
-- [TRRS jack symbol](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
-- [TRRS footprint](https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A-dual.kicad_mod)
+- [symbols: TRRS jack, resistor](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
 - [LED symbol](https://github.com/tmk/kicad_lib_tmk)
-- LED and diode footprints from built in Kicad library
-- [footprints: 4 pin TACT reset, promicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/master/Library/footprints.pretty)
+- 2.54mm pin headers and diode footprints from built in Kicad library
+- [footprints: 4 pin TACT reset, ProMicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/master/Library/footprints.pretty)
 
 ## FAQ
 **Do you have keyboard-layout-editor source?**\

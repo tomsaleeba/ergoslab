@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:testy-cache
+LIBS:ergoslab-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -198,7 +198,7 @@ Col3
 Text GLabel 1250 2700 0    50   Input ~ 0
 Row2
 $Comp
-L promicro:ProMicro PM1
+L this_keeb:ProMicro PM1
 U 1 1 5DB7A2E7
 P 1750 2250
 F 0 "PM1" H 1750 2847 60  0000 C CNN
@@ -375,7 +375,7 @@ Connection ~ 5250 2250
 Text GLabel 3650 3950 0    50   Input ~ 0
 Row3
 $Comp
-L mj-4pp-9:MJ-4PP-9 TRRS1
+L this_keeb:MJ-4PP-9 TRRS1
 U 1 1 5DB680F2
 P 2150 7200
 F 0 "TRRS1" H 1672 7127 60  0000 R CNN
@@ -828,7 +828,7 @@ SDA
 Text GLabel 1250 2400 0    50   Input ~ 0
 SCL
 $Comp
-L conn_01x04:CONN_01X04 P1
+L this_keeb:CONN_01X04 P1
 U 1 1 5DCD19CA
 P 4050 5700
 F 0 "P1" H 3967 6065 50  0001 C CNN
@@ -839,7 +839,7 @@ F 3 "" H 4050 5700 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L jp2:JP2 JP1
+L this_keeb:JP2 JP1
 U 1 1 5DCEEF2E
 P 4950 5400
 F 0 "JP1" V 4837 5400 50  0001 C CNN
@@ -850,7 +850,7 @@ F 3 "" H 4950 5400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L jp2:JP2 JP2
+L this_keeb:JP2 JP2
 U 1 1 5DCF00CE
 P 4950 5600
 F 0 "JP2" V 4837 5600 50  0001 C CNN
@@ -861,7 +861,7 @@ F 3 "" H 4950 5600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L jp2:JP2 JP4
+L this_keeb:JP2 JP4
 U 1 1 5DCF0797
 P 4950 6000
 F 0 "JP4" V 4837 6000 50  0001 C CNN
@@ -872,7 +872,7 @@ F 3 "" H 4950 6000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L jp2:JP2 JP3
+L this_keeb:JP2 JP3
 U 1 1 5DCF0E97
 P 4950 5800
 F 0 "JP3" V 4837 5800 50  0001 C CNN
@@ -913,7 +913,7 @@ SCL
 Text GLabel 5150 6000 2    50   Input ~ 0
 SDA
 $Comp
-L jp2:JP2 JP8
+L this_keeb:JP2 JP8
 U 1 1 5DD6CDF9
 P 4950 7000
 F 0 "JP8" V 5063 7000 50  0001 C CNN
@@ -924,7 +924,7 @@ F 3 "" H 4950 7000 60  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L jp2:JP2 JP7
+L this_keeb:JP2 JP7
 U 1 1 5DD6CE03
 P 4950 6800
 F 0 "JP7" V 5063 6800 50  0001 C CNN
@@ -935,7 +935,7 @@ F 3 "" H 4950 6800 60  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L jp2:JP2 JP5
+L this_keeb:JP2 JP5
 U 1 1 5DD6CE0D
 P 4950 6400
 F 0 "JP5" V 5063 6400 50  0001 C CNN
@@ -946,7 +946,7 @@ F 3 "" H 4950 6400 60  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L jp2:JP2 JP6
+L this_keeb:JP2 JP6
 U 1 1 5DD6CE17
 P 4950 6600
 F 0 "JP6" V 5063 6600 50  0001 C CNN
@@ -1024,7 +1024,7 @@ Connection ~ 4700 5550
 Text Notes 4700 5250 0    50   ~ 0
 Left hand side
 $Comp
-L conn_01x06:CONN_01X06 P2
+L this_keeb:CONN_01X06 P2
 U 1 1 5DDC8800
 P 6550 5750
 F 0 "P2" H 6467 6215 50  0000 C CNN
@@ -1229,7 +1229,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 4650 5650 4650
 $Comp
-L sk6812mini:SK6812mini LED_L1
+L this_keeb:SK6812mini LED_L1
 U 1 1 5DE1DE41
 P 2050 5100
 F 0 "LED_L1" H 2050 4850 60  0000 L CNN
@@ -1264,7 +1264,7 @@ $EndComp
 Text GLabel 900  5600 0    50   Input ~ 0
 LED
 $Comp
-L resistor:R R1
+L this_keeb:R R1
 U 1 1 5DE28F05
 P 8350 5400
 F 0 "R1" H 8420 5446 50  0000 L CNN
@@ -1275,7 +1275,7 @@ F 3 "" H 8350 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L resistor:R R2
+L this_keeb:R R2
 U 1 1 5DE296C1
 P 8750 5400
 F 0 "R2" H 8820 5446 50  0000 L CNN
@@ -1312,7 +1312,7 @@ SCL
 Text GLabel 8350 5550 3    50   Input ~ 0
 SDA
 $Comp
-L sk6812mini:SK6812mini LED_R1
+L this_keeb:SK6812mini LED_R1
 U 1 1 5DE5B1E3
 P 2050 6350
 F 0 "LED_R1" H 2050 6100 60  0000 L CNN
@@ -1323,7 +1323,7 @@ F 3 "" H 2050 6350 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L jp2:JP2 JP9
+L this_keeb:JP2 JP9
 U 1 1 5DE66916
 P 2000 5650
 F 0 "JP9" V 1887 5650 50  0001 C CNN
@@ -1358,7 +1358,7 @@ $EndComp
 Text GLabel 2700 5750 0    50   Input ~ 0
 SLAVE_LED
 $Comp
-L jp2:JP2 JP12
+L this_keeb:JP2 JP12
 U 1 1 5DF1D947
 P 2000 5900
 F 0 "JP12" V 1887 5900 50  0001 C CNN
@@ -1535,7 +1535,7 @@ Connection ~ 7000 5600
 Text Notes 1450 7750 0    50   ~ 0
 For info about PWR_FLAG, see https://forum.kicad.info/t/errtype-3-pin-connected-to-some-others-pins-but-no-pin-to-drive-it/10946
 $Comp
-L jp2:JP2 JP11
+L this_keeb:JP2 JP11
 U 1 1 5DEDAECF
 P 2950 5900
 F 0 "JP11" V 2837 5900 50  0001 C CNN
@@ -1554,7 +1554,7 @@ Wire Wire Line
 	3150 5750 2700 5750
 Connection ~ 3150 5750
 $Comp
-L jp2:JP2 JP10
+L this_keeb:JP2 JP10
 U 1 1 5DEF3C70
 P 2950 5650
 F 0 "JP10" V 2837 5650 50  0001 C CNN

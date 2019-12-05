@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=testy.net
+LastNetListRead=ergoslab.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
