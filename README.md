@@ -56,7 +56,7 @@ been exploring keyboards with less keys. There are so many candidates
 
 # Parts
 
-| QTY |  Description                            |  LCSC Part No |
+| QTY |  Description                       |  LCSC Part No |
 | :---: | :--- | :---: |
 |2 or 4| 4.7KO (4701) ±1% (2 per OLED)     |  [C58678](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_4-7KR-4701-1_C58678.html) |
 | 2  |  PJ-3200B-4A TRRS Connector         |  [C136687](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) |
@@ -68,7 +68,7 @@ been exploring keyboards with less keys. There are so many candidates
 | 18 |  standoffs (*see Note1)             |  [M2x3+3](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-3-3_C192879.html) **and** [M2x6](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-6-3-5_C193468.html) (order both!) |
 
 Note1: we need to construct our own M2 standoffs of the right length as they
-don't stock M2x9 female-female standoffs:
+don't stock M2x9 female-female standoffs.
 
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
