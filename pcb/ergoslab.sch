@@ -7,8 +7,8 @@ encoding utf-8
 Sheet 1 1
 Title "ErgoSlab"
 Date ""
-Rev "1.0"
-Comp "By /u/motfalcon"
+Rev "0.1.0"
+Comp "By Tom Saleeba"
 Comment1 "MIT License"
 Comment2 ""
 Comment3 ""
