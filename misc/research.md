@@ -11,6 +11,11 @@
      don't use the resistors.
   1. do we need a blank space to rest thumbs? No, resting them on a switch works
      fine.
+  1. from top of switch plate, we need 8.3mm for Kailh Box switches to clear the
+     base plate. So including a 1.6mm thick base PCB and 1.75mm thick nut, we
+     need at least 11.65mm long bolt that can sandwhich everything.
+     Alternatively, we need at least 6.7mm of space *between* the switch and
+     base plates.
 
 ## Facts
 - MX switches are 5mm deep, Kailh choc are 2.35mm so the choc row should drop by

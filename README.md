@@ -55,7 +55,20 @@ been exploring keyboards with less keys. There are so many candidates
   - (optional) 2x 4.7kΩ pull-up resistors for OLED I2C
 
 # Parts
-- 2x PJ-3200B-4A [link](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) (PJ-320A is discontinued)
+
+| QTY |  Description                            |  LCSC Part No |
+| :---: | :--- | :---: |
+|2 or 4| 4.7KO (4701) ±1% (2 per OLED)     |  [C58678](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_4-7KR-4701-1_C58678.html) |
+| 2  |  PJ-3200B-4A TRRS Connector         |  [C136687](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) |
+| 2  |  Reset switch                       |  Switch 5.2*5.2*1.5 250gf Copper head [C92584](https://lcsc.com/product-detail/Tactile-Switches_Switch-5-2-5-2-1-5-250gf-Copper-head_C92584.html) or 6*3.3mm [C136742](https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1101DT-A4SW-01black_C136742.html) |
+| 2  |  2.54mm 1*40P round Female header   |  [C9811](https://lcsc.com/product-detail/Female-Header_2-54mm-1-40P-round-Female-header_C9811.html) |
+| 2  |  OLED Female header                 |  [C124413](https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124413_C124413.html) |
+| 52 |  1N4148 Switching Diode             |  [C14516](https://lcsc.com/product-detail/Switching-Diode_1N4148_C14516.html) |
+| 36 |  M2x4 screw                         |  black [C357533](https://lcsc.com/product-detail/Screw_Shuntian-PM2X4_C357533.html) or silver [C357393](https://lcsc.com/product-detail/Screw_Shuntian-PM2X4_C357393.html) |
+| 18 |  standoffs (*see Note1)             |  [M2x3+3](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-3-3_C192879.html) **and** [M2x6](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-6-3-5_C193468.html) (order both!) |
+
+Note1: we need to construct our own M2 standoffs of the right length as they
+don't stock M2x9 female-female standoffs:
 
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
