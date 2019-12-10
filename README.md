@@ -66,6 +66,43 @@ manufactured. The listed quantity is to assemble *both halves*.
 Note1: we need to construct our own M2 standoffs of the right length as they
 don't stock M2x9 female-female standoffs.
 
+# Generating gerbers
+Using KiCad 5.1.4, here's the settings to generate gerbers.
+
+Plot settings (should be the defaults):
+```
+Plot format: Gerber
+Included layers:
+  F.Cu
+  B.Cu
+  F.Paste
+  B.Paste
+  F.SilkS
+  B.SilkS
+  F.Mask
+  B.Mask
+  Edge.Cuts
+Plot foorprint values: yes
+Plot footprint references: yes
+Exclude PCB edge layer from other layers: yes
+Exclude pads from silkscreen: yes
+Default line width: 0.1mm
+Coordinate format: 4.6, unit mm
+```
+
+Drill settings:
+```
+Drill File Format: Excellon
+Oval Holes Drill Mode: Use alternate drill mode
+Map File Format: PostScript
+Drill Origin: Absolute
+Drill Units: Inches
+Zeros Format: Suppress leading zeros
+```
+
+The fix for the JLCPCB PTH layer error was to change the [oval hole drill
+mode](https://forum.kicad.info/t/jlcpcb-gives-me-warnings-on-drill-and-edge-cuts/17565/25).
+
 # Credit for Kicad symbols/footprints
 - [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
 - [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
