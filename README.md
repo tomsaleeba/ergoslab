@@ -98,6 +98,9 @@ Coordinate format: 4.6, unit mm
 Drill settings:
 ```
 Drill File Format: Excellon
+Mirror axis: no
+Minimal header: no
+PTH and NPTH in single file: no
 Oval Holes Drill Mode: Use alternate drill mode
 Map File Format: PostScript
 Drill Origin: Absolute

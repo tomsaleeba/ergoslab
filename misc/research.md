@@ -24,3 +24,5 @@
 - WS2812 strips are driven from any old pin, they don't use I2C
 - ErgoDox style columnar staggered: 0, +1/4U (4.75mm), +3/8U (7.125mm), +1/4U
   (4.75mm), +1/8U (2.375mm)
+- stabilising 4th/5th legs on Gateron switch: 1.575mm (as measured with
+    micrometer)
