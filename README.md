@@ -4,8 +4,6 @@
 **Beware: I haven't built this yet. So I guess it might not work**
 
 ![keyboard layout](./layout.png)
-![PCB](./render-pcb.png)
-
 ## What is this thing?
 I've been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
 few years now and I love them. I'm looking for something more compact and with
@@ -14,6 +12,8 @@ more (easily accessible) thumb keys. There are so many candidates
 [here](https://keebfol.io/), [here](https://golem.hu/boards/) and
 [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
 *exactly* what I want, so why not build my own!
+
+![PCB](./render-pcb.png)
 
 ## Desgin choices:
   - ErgoDox style ortho-columnar but with the extra little finger offset of the
@@ -32,6 +32,11 @@ more (easily accessible) thumb keys. There are so many candidates
     [for-split-keyboard](https://github.com/peej/for-split-keyboard) and
     [mitosis](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/)
   - support 5-pin/PCB mount switches
+
+## Gerbers
+See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
+GitHub repo for the generated Gerber files. You probably want the most recent
+version.
 
 ## Parts list
   - 6x PCBs, as the same design is used for base, PCB and switch plate
