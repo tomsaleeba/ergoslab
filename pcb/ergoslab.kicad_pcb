@@ -3888,7 +3888,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14C17)
     (at 185.53 135.01)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE7 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3899,7 +3899,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14C0F)
     (at 93.28 135.02)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE8 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3910,7 +3910,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BF7)
     (at 125.6 120.5)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE9 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3921,7 +3921,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BEF)
     (at 185.49 115.63)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE6 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3932,7 +3932,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BDF)
     (at 163.85 45.88)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE5 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3943,7 +3943,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BD7)
     (at 138 45.84)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE4 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3954,7 +3954,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BCF)
     (at 106.19 45.89)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE3 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3965,7 +3965,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BC7)
     (at 74.75 51.4)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE2 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3976,7 +3976,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE14BBF)
     (at 73.88 84.98)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE1 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
@@ -3987,7 +3987,7 @@
 
   (module footprints:switchplate-brace (layer F.Cu) (tedit 5DE11782) (tstamp 5DE13018)
     (at 73.84 122.89)
-    (fp_text reference REF** (at 0.4 1.4) (layer F.SilkS) hide
+    (fp_text reference BRACE0 (at 0.4 1.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value switchplate-brace (at 0 -1.4) (layer F.Fab)
