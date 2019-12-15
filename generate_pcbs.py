@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 import os
-from pcbnew import *
+import pcbnew
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
 master_pcb = os.path.join(this_dir, 'pcb', 'ergoslab.kicad_pcb')
@@ -13,7 +13,7 @@ base_pcb = os.path.join(this_dir, 'generated_pcb', 'base', 'base.kicad_pcb')
 # - 0.0502 switch holes
 
 def generate_base_pcb():
-    board = LoadBoard(master_pcb)
+    board = pcbnew.LoadBoard(master_pcb)
     print('Creating base PCB: %s' % base_pcb)
     for module in board.GetModules():
         # FIXME don't delete chicken
@@ -22,7 +22,16 @@ def generate_base_pcb():
         board.Delete(t)
     for d in board.GetDrawings():
         # FIXME don't delete name, version, licence
+        if d.GetLayerName() == 'Edge.Cuts':
+            continue
         board.Delete(d)
+    #     if type(d) is pcbnew.TEXTE_PCB:
+    #         print("* Text:    '%s' at %s"%(d.GetText(), d.GetPosition()))
+    #     elif type(d) is pcbnew.DRAWSEGMENT:
+    #         print("* Drawing: %s"%d.GetShapeStr())
+            # item.GetWidth() == 50000
+    #     else:
+    #         print(type(d))
     # FIXME delete template ProMicro edge.cuts
     # FIXME delete template choc edge.cuts
     # FIXME delete template switch edge.cuts
