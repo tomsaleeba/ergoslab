@@ -27,10 +27,9 @@ more (easily accessible) thumb keys. There are so many candidates
   - minimise overall footprint by using internal standoffs (thanks for the idea
       [ErgoTravel](https://github.com/jpconstantineau/ErgoTravel))
   - use only 1U key caps to minimise size and because stabilisers are annoying
-  - One PCB design that works as all 3 layers of a sandwich design: base, PCB and
-    switch plate. Idea taken from
-    [for-split-keyboard](https://github.com/peej/for-split-keyboard) and
-    [mitosis](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/)
+  - author a single "master" PCB and use a python script to generate the 3
+      layers of the sandwich case. Makes life much easier to keep them all in
+      sync.
   - support 5-pin/PCB mount switches
 
 ## Gerbers
@@ -70,6 +69,36 @@ manufactured. The listed quantity is to assemble *both halves*.
 
 Note1: we need to construct our own M2 standoffs of the right length as they
 don't stock M2x9 female-female standoffs.
+
+
+# Generating 3 layers of sandwich case
+We edit a single PCB file that contains the information required to generate all
+3 layer (switch plate, circuitry, base) of a sandwich case keyboard. Keeping it
+all in one file ensures that things like mounting hole always stay lined up.
+
+There is some magic in the settings of items on the PCB to indicate what layer
+they belong on. Read the code for the specifics but as a general guide:
+  - we use Eco1.User as the templates for edge cuts that only appear on some
+      layers
+  - the width of the drawing lines are slightly different so we can determine
+      which belongs on each layer
+  - the thickness of text is slightly different so we can determine which
+      belongs on each layer
+
+You *must* have Kicad installed in your system. Doing this makes the `pcbnew`
+python module available. Make sure you don't have any virtualenv, etc activated
+as you need to be using you system-wide python. Check for the module with:
+
+```python
+import pcbnew
+```
+
+Now you can regenerate the PCBs with:
+
+```bash
+python ./generate_pcbs.py
+```
+
 
 # Generating gerbers
 Using KiCad 5.1.4, here's the settings to generate gerbers.
@@ -124,6 +153,17 @@ mode](https://forum.kicad.info/t/jlcpcb-gives-me-warnings-on-drill-and-edge-cuts
 Sort of. You won't be able to use OLED screens and there's no solder jumpers so
 you'll have to jump some wires between the OLED header SDA/SCL pins and the
 SLAVE_LED pin/data pin on the unused TRRS jack.
+
+**What happened to a single PCB that works as all 3 layers?**
+Originally I tried to make one PCB design that works as all 3 layers of a
+sandwich design: base, PCB and switch plate. The idea was taken from
+[for-split-keyboard](https://github.com/peej/for-split-keyboard) and
+[mitosis](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/).
+I failed because I wanted to have minimal post-manufacture cutting by hand and
+JLCPCB kept rejecting my desgins as they didn't have strong enough supports to
+hold the PCB together though the whole manufacture process. So now we have
+"master" PCB design and use a python script to generate the PCBs for each layer
+from that master.
 
 **Do you have keyboard-layout-editor source?**\
 Yes. Either [this file](./layout.kle) in this repo or here's a (hopefully up to date)
