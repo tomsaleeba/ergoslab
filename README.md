@@ -38,7 +38,10 @@ GitHub repo for the generated Gerber files. You probably want the most recent
 version.
 
 ## Parts list
-  - 6x PCBs, as the same design is used for base, PCB and switch plate
+  - 2x top PCBs (I guess these are optional if you're happy with PCB mount -
+      untested)
+  - 2x middle PCBs (or 4x as they can also be used as the base)
+  - 2x base PCBs (if you didn't order 4x middle)
   - 2x Pro Micros
   - 1x TRRS cable
   - 42x MX (or compatible) switches
@@ -46,7 +49,10 @@ version.
   - 10x Kailh choc switches
   - 42x 1U MX key caps
   - 10x 1U Kailh choc key caps
-  - (optional) 2x WS2812 LED from a 144 LEDs/m strip, for layer status
+  - (optional) 2x WS2812 LED from a 144 LEDs/m strip, for layer status lights
+  - (optional) more WS2812 LEDs, of any density per meter strip, for underglow
+      lighting. 12x is probably a sane number but if you want to run them at
+      lower power, you could probably use more.
   - 8x 4mm M2 standoffs (4 per side), for both mounting the OLED acrylic cover
       and mounting the bottom switch row section of PCB to the base plate
   - 16x 2mm M2 screws (8 per side)
