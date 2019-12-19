@@ -29,7 +29,7 @@ more (easily accessible) thumb keys. There are so many candidates
   - use only 1U key caps to minimise size and because stabilisers are annoying
   - author a single "master" PCB and use a python script to generate the 3
       layers of the sandwich case. Makes life much easier to keep them all in
-      sync.
+      sync. (See further down for more info)
   - support 5-pin/PCB mount switches
 
 ## Gerbers
@@ -98,6 +98,9 @@ Now you can regenerate the PCBs with:
 ```bash
 python ./generate_pcbs.py
 ```
+
+Normally keeping generated things in source control is not a good idea but in
+the interest of keeping things easy, we include the generated PCBs.
 
 
 # Generating gerbers
