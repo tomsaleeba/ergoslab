@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title ErgoSlab)
-    (rev 0.4.0)
+    (rev 1.0.0)
     (company "By Tom Saleeba")
     (comment 1 "MIT License")
   )
@@ -504,7 +504,7 @@
   (gr_text ErgoSlab (at 76.6 54.8) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1501)))
   )
-  (gr_text v0.4.0 (at 76.3 53.2) (layer F.SilkS)
+  (gr_text v1.0.0 (at 76.3 53.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1501)))
   )
   (gr_arc (start 78.77 52.39) (end 78.77 46.07) (angle -90) (layer Edge.Cuts) (width 0.05))
