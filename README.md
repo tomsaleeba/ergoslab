@@ -1,8 +1,6 @@
 > a columnar stagged keyboard that uses a combination of Cherry MX (or
 > compatible) and Kailh choc switches to pack in a heap of thumb keys
 
-**Beware: I haven't built this yet. So I guess it might not work**
-
 ![keyboard layout](./layout.png)
 ## What is this thing?
 I've been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
@@ -13,7 +11,7 @@ more (easily accessible) thumb keys. There are so many candidates
 [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
 *exactly* what I want, so why not build my own!
 
-![PCB](./render-pcb.png)
+![ergoslab keyboard photo](./ergoslab.jpg)
 
 ## Desgin choices:
   - ErgoDox style ortho-columnar but with the extra little finger offset of the
@@ -21,7 +19,7 @@ more (easily accessible) thumb keys. There are so many candidates
   - Make all thumb keys easily accessible from the normal hand position
   - keys for vim-style arrows on the right hand, and directly below the home row
   - same plate design for both halves
-  - compatible with QMK firmware
+  - compatible with QMK firmware, see [keyboard directory in QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergoslab)
   - optional top LED for layer status
   - optional underglow LEDs
   - minimise overall footprint by using internal standoffs (thanks for the idea
@@ -37,15 +35,15 @@ See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
 GitHub repo for the generated Gerber files. You probably want the most recent
 version.
 
-## Parts list
-  - 2x top PCBs (I guess these are optional if you're happy with PCB mount -
-      untested)
+# Parts list
+## Parts you'll have to find yourself
+  - 2x top PCBs (optional if you're happy with PCB mount; untested)
   - 2x middle PCBs (or 4x as they can also be used as the base)
   - 2x base PCBs (if you didn't order 4x middle)
   - 2x Pro Micros
   - 1x TRRS cable
-  - 42x MX (or compatible) switches
-  - 42x Kailh hotswap sockets
+  - 42x Cherry MX (or compatible) switches
+  - 42x [Kailh hotswap PCB sockets](https://novelkeys.xyz/products/kailh-pcb-sockets)
   - 10x Kailh choc switches
   - 42x 1U MX key caps
   - 10x 1U Kailh choc key caps
@@ -53,29 +51,47 @@ version.
   - (optional) more WS2812 LEDs, of any density per meter strip, for underglow
       lighting. 12x is probably a sane number but if you want to run them at
       lower power, you could probably use more.
-  - 8x 4mm M2 standoffs (4 per side), for both mounting the OLED acrylic cover
-      and mounting the bottom switch row section of PCB to the base plate
-  - 16x 2mm M2 screws (8 per side)
+  - 4x 15mm M2 standoffs (2 per side), for mounting the OLED/ProMicro acrylic cover
+  - 8x M2 screws, between 4 and 8mm long, for the above standoffs
   - (optional) 1 or 2 OLED screens
+  - 36x M2x4 screw (See Note1 and Note2) for mounting the middle/PCB layer to the base
+      plate
 
-# Parts
+**Note1**: the screw/bolt length depends on the height of the standoffs you get. You
+want 1.6mm thick PCBs so make sure you don't have *too much* thread on your
+screws.
+
+**Note2**:
+
+![Photo of hex head screws](./misc/hex-head-screws.jpg)
+
+It's highly recommended to get hex head/allen key/ISO7380 screws. This is
+because a phillips head screwdriver probably won't fit through the holes in the
+switchplate to tighten the screws on the middle/PCB layer. You can always drill
+those holes a bit bigger or loctite the screws in to workaround this. As you
+have hotswap sockets, you should be able to remove the switches and pull the
+middle/PCB layer screws out through the switch holes.
+
+## Parts available with PCB order
 These are the parts you can order from LCSC at the same time as having your PCBs
 manufactured. The listed quantity is to assemble *both halves*.
 
 | QTY |  Description                       |  LCSC Part No |
 | :---: | :--- | :---: |
-|0/2/4| 4.7KO (4701) ±1% (2 per OLED)     |  [C58678](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_4-7KR-4701-1_C58678.html) |
+|0/2/4| 4.7KO (4701) ±1% (2 per OLED)      |  [C58678](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_4-7KR-4701-1_C58678.html) |
 | 2  |  PJ-3200B-4A TRRS Connector         |  [C136687](https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3200B-4A_C136687.html) |
-| 2  |  Reset switch                       |  Switch 5.2*5.2*1.5 250gf Copper head [C92584](https://lcsc.com/product-detail/Tactile-Switches_Switch-5-2-5-2-1-5-250gf-Copper-head_C92584.html) or 6*3.3mm [C136742](https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1101DT-A4SW-01black_C136742.html) |
+| 2  |  Switch 5.2*5.2*1.5 reset switch    |  [C92584](https://lcsc.com/product-detail/Tactile-Switches_Switch-5-2-5-2-1-5-250gf-Copper-head_C92584.html) |
 | 2  |  2.54mm 1*40P round Female header   |  [C9811](https://lcsc.com/product-detail/Female-Header_2-54mm-1-40P-round-Female-header_C9811.html) |
-|0/2 |  OLED Female header                 |  [C124413](https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124413_C124413.html) |
+|0/1/2|  OLED Female header                |  [C124413](https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124413_C124413.html) |
 | 52 |  1N4148 Switching Diode             |  [C14516](https://lcsc.com/product-detail/Switching-Diode_1N4148_C14516.html) |
-| 36 |  M2x4 screw                         |  black [C357533](https://lcsc.com/product-detail/Screw_Shuntian-PM2X4_C357533.html) or silver [C357393](https://lcsc.com/product-detail/Screw_Shuntian-PM2X4_C357393.html) |
-| 18 |  standoffs (*see Note1)             |  [M2x3+3](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-3-3_C192879.html) **and** [M2x6](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-6-3-5_C193468.html) (order both!) |
+| 18 |  M2x6mm standoffs (See Note3) for middle/PCB layer to base plate mounting |  [M2x6](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-6-3-5_C193468.html) |
 
-Note1: we need to construct our own M2 standoffs of the right length as they
-don't stock M2x9 female-female standoffs.
-
+Note3: the standoffs between the middle/PCB layer and the base plate can be
+quite small, probably as small as 3mm. The problem with that is making sure the
+bolts engage the threads enough. Feel free to experiment with getting a super
+slim keyboard. Perhaps use a long bolt, a threadless spacer and a nut? Or only
+use one screw per standoff with half from the top and the other half from the
+bottom.
 
 # Generating 3 layers of sandwich case
 We edit a single PCB file that contains the information required to generate all
@@ -93,7 +109,8 @@ they belong on. Read the code for the specifics but as a general guide:
 
 You *must* have Kicad installed in your system. Doing this makes the `pcbnew`
 python module available. Make sure you don't have any virtualenv, etc activated
-as you need to be using you system-wide python. Check for the module with:
+as you need to be using you system-wide python. Check for the module by running
+the following in the python REPL:
 
 ```python
 import pcbnew
@@ -150,18 +167,26 @@ The fix for the JLCPCB PTH layer error was to change the [oval hole drill
 mode](https://forum.kicad.info/t/jlcpcb-gives-me-warnings-on-drill-and-edge-cuts/17565/25).
 
 # Credit for Kicad symbols/footprints
-- [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/master/Kailh_socket_reversible.kicad_mod)
-- [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/tree/master/minisplit-footprint.pretty)
-- [symbols: TRRS jack, resistor](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic)
-- [LED symbol](https://github.com/tmk/kicad_lib_tmk)
+- [Kailh reversible footprints](https://github.com/daprice/keyswitches.pretty/blob/f89ef994a51043281f3fa6dfb4a93d8e4bebdbd1/Kailh_socket_reversible.kicad_mod) ([CC BY-SA](https://github.com/daprice/keyswitches.pretty/blob/f89ef994a51043281f3fa6dfb4a93d8e4bebdbd1/LICENSE.md))
+- [P-08073 TACT reset switch footprint](https://github.com/kata0510/minisplit/blob/5fc4b23/minisplit-footprint.pretty/TACT_SWITCH_TVBP06.kicad_mod) ([MIT License](https://github.com/kata0510/minisplit/blob/5fc4b233df8120694ade5a3a812970439e8fc585/LICENSE))
+- [symbols: TRRS jack, resistor](https://github.com/MakotoKurauchi/helix/tree/master/PCB/beta) (exported from schematic) ([MIT License](https://github.com/MakotoKurauchi/helix/blob/master/LICENSE))
+- [LED symbol](https://github.com/tmk/kicad_lib_tmk) (no license)
 - 2.54mm pin headers and diode footprints from built in Kicad library
-- [footprints: 4 pin TACT reset, ProMicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/master/Library/footprints.pretty)
+- [footprints: 4 pin TACT reset, ProMicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/d443bf4/Library/footprints.pretty) ([MIT License](https://github.com/jpconstantineau/ErgoTravel/blob/master/LICENSE))
 
 ## FAQ
+**How portable is it?**
+It weighs 360grams (180grams for each half) with cheap DSA plastic keycaps. It
+measures 115mm x 102mm and with 6mm standoffs, it's 16mm to the top of the
+switchplate or 31mm to the top of DSA keycaps, including the height of rubber
+bump-ons. I'll let you decide how portable you think that is but it was designed
+to be portable.
+
 **Is I2C between the halves supported?**
-Sort of. You won't be able to use OLED screens and there's no solder jumpers so
-you'll have to jump some wires between the OLED header SDA/SCL pins and the
-SLAVE_LED pin/data pin on the unused TRRS jack.
+Sort of. The OLED screens use I2C so you won't be able to use them. Also there's
+no solder jumpers so you'll have to jump some wires between the OLED header
+SDA/SCL pins and the SLAVE_LED pin/data pin on the unused TRRS jack. This isn't
+an intended use but you can certainly hack it, check the schematic for details.
 
 **What happened to a single PCB that works as all 3 layers?**
 Originally I tried to make one PCB design that works as all 3 layers of a
