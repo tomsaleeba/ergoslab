@@ -20,7 +20,7 @@ more (easily accessible) thumb keys. There are so many candidates
   - keys for vim-style arrows on the right hand, and directly below the home row
   - same plate design for both halves
   - compatible with QMK firmware, see [keyboard directory in QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergoslab)
-  - optional top LED for layer status
+  - optional top LED for layer status ([example](./misc/layer-led-in-action.jpg))
   - optional underglow LEDs
   - minimise overall footprint by using internal standoffs (thanks for the idea
       [ErgoTravel](https://github.com/jpconstantineau/ErgoTravel))
