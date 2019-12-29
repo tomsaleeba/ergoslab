@@ -30,6 +30,9 @@ more (easily accessible) thumb keys. There are so many candidates
       sync. (See further down for more info)
   - support 5-pin/PCB mount switches
 
+## Build guide
+See the [guide here](./build-guide.md).
+
 ## Gerbers
 See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
 GitHub repo for the generated Gerber files. You probably want the most recent

@@ -32,8 +32,8 @@
     ![OLED jumper fail](./misc/oled-header1.jpg)
    ...then use a small piece of diode leg to bridge the gap. I used a longer
    piece then trimmed it after soldering.
-    ![OLED bridge](./misc/oled-header2.jpg)
-   All four jumpers should be soldered at the end:
+    ![OLED bridge](./misc/oled-header2.jpg)<br />
+   All four jumpers should be soldered at the end:<br />
     ![OLED header done](./misc/oled-header3.jpg)
 1. (optional, for OLED) install the I2C resistors
 1. (optional, for OLED) install the header. If you only want to run one OLED, I
@@ -42,7 +42,7 @@
 1. Install the 11 standoffs. Make sure you use cap screws (allen key head) on
    the top of the middle layer. This is so you can always tighten them after
    assembly. A phillips head screwdriver probably won't fit through the hole in
-   the switchplate.
+   the switchplate. (Yep, I forgot two diodes in these photos.)
     ![standoffs from top](./misc/standoffs-top.jpg)
     ![standoffs from bottom](./misc/standoffs-bottom.jpg)
 1. Install the ProMicro sockets. Do not solder the ProMicro directly to the PCB.
@@ -52,7 +52,7 @@
    finger, don't put it over the pin you're heating, it will get hot.
 1. Install 4 MX switches, one in each corner of the switch plate. Mount the
    switch plate over the PCB/middle layer.
-    ![mx switches from bottom](./misc/mx-orientation-bottom.jpg)
+    ![mx switches from top](./misc/mx-4switches-top.jpg)
    When you install the switches, make sure the legs go through the holes and do
    NOT have the visible solder pads next to them. Here's a view from the
    *bottom* that shows why we use those holes; so the pins line up with the pads
@@ -73,7 +73,7 @@
 1. Install the rest of the MX switches, paying attention to install them the
    correct way. They don't all go the same way.
     ![all MX switches installed](./misc/all-mx.jpg)
-1. Install switch hotswap sockets. Again, not all of them are the same
+1. Install the switch hotswap sockets. Again, not all of them are the same
    orientation so pay attention.
     ![hotswap sockets](./misc/hotswap-unsoldered.jpg)
 1. Solder all the hotswap sockets
