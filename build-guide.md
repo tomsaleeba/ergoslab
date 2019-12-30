@@ -26,9 +26,13 @@
    soldered will connect the `Do` from the top LED to PIN on the TRRS connector
    that sends the LED data to the other half. This will appear on the
    `SLAVE_LED` pin on the slave.
-1. (optional, for OLED) solder the jumpers on the **top** of the PCB. If you
-   can't get the solder to jump the gap, like this (don't install the header
-   first, like I did. That was a mistake):
+1. (optional, for OLED) solder the jumpers on the **top** of the PCB. It can be
+   a bit fiddly to get the solder to jump the gap. I've found the best way is to
+   make sure you heat both the pads properly (have the iron in contact for a few
+   seconds) and lift the iron up when you're done. If you drag the iron
+   sideways, the solder doesn't seem to want to jump the gap. If you can't get
+   the solder to jump the gap, like this (don't install the header first, like I
+   did. That was a mistake):
     ![OLED jumper fail](./misc/oled-header1.jpg)
    ...then use a small piece of diode leg to bridge the gap. I used a longer
    piece then trimmed it after soldering.
