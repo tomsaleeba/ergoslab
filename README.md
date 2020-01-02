@@ -92,9 +92,7 @@ manufactured. The listed quantity is to assemble *both halves*.
 Note3: the standoffs between the middle/PCB layer and the base plate can be
 quite small, probably as small as 3mm. The problem with that is making sure the
 bolts engage the threads enough. Feel free to experiment with getting a super
-slim keyboard. Perhaps use a long bolt, a threadless spacer and a nut? Or only
-use one screw per standoff with half from the top and the other half from the
-bottom.
+slim keyboard. Perhaps use a long bolt, a threadless spacer and a nut?
 
 # Generating 3 layers of sandwich case
 We edit a single PCB file that contains the information required to generate all

@@ -101,7 +101,7 @@ between the base and switch plate, passing right through the middle layer.
 
 There are M2 mounting holes to support the Choc row of switches. If you cannot
 find standoffs the correct height, there is another option to support these
-switches.  There are two small plated through holes; one at either end of the
+switches. There are two small plated through holes; one at either end of the
 row of Choc switches. Solder up the holes in the base layer and solder a diode
 leg into the hole on the PCB/middle layer. The diode leg will then rest on the
 solder on the base plate and provide support.
