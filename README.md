@@ -14,6 +14,7 @@ more (easily accessible) thumb keys. There are so many candidates
 ![ergoslab keyboard photo](./ergoslab.jpg)
 
 ## Desgin choices:
+  - Kailh hotswap sockets for all the MX-style switches (choc are soldered in)
   - ErgoDox style ortho-columnar but with the extra little finger offset of the
       [Diverge 3](https://unikeyboard.io/product/diverge-3/)
   - Make all thumb keys easily accessible from the normal hand position
