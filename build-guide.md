@@ -96,7 +96,7 @@
 
 # Option: floating middle PCB
 If you want to, you can use a 4.5mm drill bit to drill out the M2 mounting holes
-on the PCB (middle layer of sandwich). This means your standoffs can attached
+on the PCB (middle layer of sandwich). This means your standoffs are attached
 between the base and switch plate, passing right through the middle layer.
 
 There are M2 mounting holes to support the Choc row of switches. If you cannot

@@ -71,10 +71,11 @@ screws.
 
 It's highly recommended to get hex head/allen key/ISO7380 screws. This is
 because a phillips head screwdriver probably won't fit through the holes in the
-switchplate to tighten the screws on the middle/PCB layer. You can always drill
-those holes a bit bigger or loctite the screws in to workaround this. As you
-have hotswap sockets, you should be able to remove the switches and pull the
-middle/PCB layer screws out through the switch holes.
+switch plate to tighten the screws on the middle/PCB layer. You can always drill
+those holes a bit bigger or loctite the screws in (so they won't need tighening)
+to workaround this. As you have hotswap sockets, you may be able to remove the
+switches and pull the middle/PCB layer screws out through the switch holes.
+Beware: with 4mm long screws, I couldn't achieve this, though it was very close.
 
 ## Parts available with PCB order
 These are the parts you can order from LCSC at the same time as having your PCBs
@@ -180,7 +181,7 @@ mode](https://forum.kicad.info/t/jlcpcb-gives-me-warnings-on-drill-and-edge-cuts
 **How portable is it?**
 It weighs 360grams (180grams for each half) with cheap DSA plastic keycaps. It
 measures 115mm x 102mm and with 6mm standoffs, it's 16mm to the top of the
-switchplate or 31mm to the top of DSA keycaps, including the height of rubber
+switch plate or 31mm to the top of DSA keycaps, including the height of rubber
 bump-ons. I'll let you decide how portable you think that is but it was designed
 to be portable.
 
