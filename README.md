@@ -1,8 +1,23 @@
 > a columnar stagged keyboard that uses a combination of Cherry MX (or
 > compatible) and Kailh choc switches to pack in a heap of thumb keys
 
-![keyboard layout](./layout.png)
-## What is this thing?
+- [What is this thing?](#what-is-this-thing-)
+- [Desgin choices:](#desgin-choices-)
+- [Build guide](#build-guide)
+- [Gerbers](#gerbers)
+- [Parts list](#parts-list)
+  * [Parts you'll have to find yourself](#parts-you-ll-have-to-find-yourself)
+  * [Parts available with PCB order](#parts-available-with-pcb-order)
+- [Developers/contributing](#developers-contributing)
+  * [Generating 3 layers of sandwich case](#generating-3-layers-of-sandwich-case)
+  * [Generating gerbers](#generating-gerbers)
+- [Credit for Kicad symbols/footprints](#credit-for-kicad-symbols-footprints)
+- [FAQ](#faq)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+# What is this thing?
 I've been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
 few years now and I love them. I'm looking for something more compact and with
 more (easily accessible) thumb keys. There are so many candidates
@@ -13,7 +28,9 @@ more (easily accessible) thumb keys. There are so many candidates
 
 ![ergoslab keyboard photo](./ergoslab.jpg)
 
-## Desgin choices:
+![keyboard layout](./layout.png)
+
+# Desgin choices:
   - Kailh hotswap sockets for all the MX-style switches (choc are soldered in)
   - ErgoDox style ortho-columnar but with the extra little finger offset of the
       [Diverge 3](https://unikeyboard.io/product/diverge-3/)
@@ -31,10 +48,10 @@ more (easily accessible) thumb keys. There are so many candidates
       sync. (See further down for more info)
   - support 5-pin/PCB mount switches
 
-## Build guide
+# Build guide
 See the [guide here](./build-guide.md).
 
-## Gerbers
+# Gerbers
 See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
 GitHub repo for the generated Gerber files. You probably want the most recent
 version.
@@ -114,7 +131,7 @@ Steps for contributing:
 1. send a pull request
 
 
-# Generating 3 layers of sandwich case
+## Generating 3 layers of sandwich case
 We edit a single PCB file that contains the information required to generate all
 3 layer (switch plate, circuitry, base) of a sandwich case keyboard. Keeping it
 all in one file ensures that things like mounting hole always stay lined up.
@@ -147,7 +164,7 @@ Normally keeping generated things in source control is not a good idea but in
 the interest of keeping things easy, we include the generated PCBs.
 
 
-# Generating gerbers
+## Generating gerbers
 Using KiCad 5.1.4, here's the settings to generate gerbers.
 
 Plot settings (should be the defaults):
@@ -195,7 +212,7 @@ mode](https://forum.kicad.info/t/jlcpcb-gives-me-warnings-on-drill-and-edge-cuts
 - 2.54mm pin headers and diode footprints from built in Kicad library
 - [footprints: 4 pin TACT reset, ProMicro, diode](https://github.com/jpconstantineau/ErgoTravel/tree/d443bf4/Library/footprints.pretty) ([MIT License](https://github.com/jpconstantineau/ErgoTravel/blob/master/LICENSE))
 
-## FAQ
+# FAQ
 **How portable is it?**
 It weighs 360grams (180grams for each half) with cheap DSA plastic keycaps. It
 measures 115mm x 102mm and with 6mm standoffs, it's 16mm to the top of the
