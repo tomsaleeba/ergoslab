@@ -39,6 +39,8 @@ See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
 GitHub repo for the generated Gerber files. You probably want the most recent
 version.
 
+If you need to generate your own gerbers, see [how to turn the master PCB into the 3 generated PCBs](#generating-3-layers-of-sandwich-case) and then [how to generate gerbers](#generating-gerbers).
+
 # Parts list
 ## Parts you'll have to find yourself
   - 2x top PCBs (optional if you're happy with PCB mount; untested)
@@ -65,17 +67,16 @@ version.
 want 1.6mm thick PCBs so make sure you don't have *too much* thread on your
 screws.
 
-**Note2**:
-
-![Photo of hex head screws](./misc/hex-head-screws.jpg)
-
-It's highly recommended to get hex head/allen key/ISO7380 screws. This is
+**Note2**: it's highly recommended to get hex head/allen key/ISO7380 screws (see image below). This is
 because a phillips head screwdriver probably won't fit through the holes in the
 switch plate to tighten the screws on the middle/PCB layer. You can always drill
 those holes a bit bigger or loctite the screws in (so they won't need tighening)
 to workaround this. As you have hotswap sockets, you may be able to remove the
 switches and pull the middle/PCB layer screws out through the switch holes.
 Beware: with 4mm long screws, I couldn't achieve this, though it was very close.
+
+![Photo of hex head screws](./misc/hex-head-screws.jpg)
+
 
 ## Parts available with PCB order
 These are the parts you can order from LCSC at the same time as having your PCBs
@@ -91,10 +92,27 @@ manufactured. The listed quantity is to assemble *both halves*.
 | 52 |  1N4148 Switching Diode             |  [C14516](https://lcsc.com/product-detail/Switching-Diode_1N4148_C14516.html) |
 | 18 |  M2x6mm standoffs (See Note3) for middle/PCB layer to base plate mounting |  [M2x6](https://lcsc.com/product-detail/Studs_Made-in-China-Made-in-China-M2-6-3-5_C193468.html) |
 
-Note3: the standoffs between the middle/PCB layer and the base plate can be
+**Note3**: the standoffs between the middle/PCB layer and the base plate can be
 quite small, probably as small as 3mm. The problem with that is making sure the
 bolts engage the threads enough. Feel free to experiment with getting a super
 slim keyboard. Perhaps use a long bolt, a threadless spacer and a nut?
+
+# Developers/contributing
+Contributions are welcome. I'm not selling these keyboards and I already have
+two for myself so I can't afford to manfacture more PCBs to test changes. If you
+make changes to the PCB design, ideally you would confirm it all works by
+manufacturing your own PCBs.
+
+Steps for contributing:
+
+1. if it's a non-trival change, consider opening an issue on this repo to talk
+   about the change before spending effort
+1. fork this repo
+1. make your changes
+1. if you made a change to the PCB, you need to [regenerate the 3 seperate
+   generated PCBs](#generating-3-layers-of-sandwich-case)
+1. send a pull request
+
 
 # Generating 3 layers of sandwich case
 We edit a single PCB file that contains the information required to generate all
