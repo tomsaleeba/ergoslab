@@ -1,20 +1,18 @@
 > a columnar stagged keyboard that uses a combination of Cherry MX (or
 > compatible) and Kailh choc switches to pack in a heap of thumb keys
 
-- [What is this thing?](#what-is-this-thing-)
-- [Desgin choices:](#desgin-choices-)
+- [What is this thing?](#what-is-this-thing)
+- [Desgin choices:](#desgin-choices)
 - [Build guide](#build-guide)
 - [Gerbers](#gerbers)
 - [Parts list](#parts-list)
-  * [Parts you'll have to find yourself](#parts-you-ll-have-to-find-yourself)
+  * [Parts you'll have to find yourself](#parts-youll-have-to-find-yourself)
   * [Parts available with PCB order](#parts-available-with-pcb-order)
-- [Developers/contributing](#developers-contributing)
+- [Developers/contributing](#developerscontributing)
   * [Generating 3 layers of sandwich case](#generating-3-layers-of-sandwich-case)
   * [Generating gerbers](#generating-gerbers)
-- [Credit for Kicad symbols/footprints](#credit-for-kicad-symbols-footprints)
+- [Credit for Kicad symbols/footprints](#credit-for-kicad-symbolsfootprints)
 - [FAQ](#faq)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 # What is this thing?
