@@ -94,18 +94,6 @@
 1. flash firmware to both halves
 
 
-# Option: floating middle PCB
-If you want to, you can use a 4.5mm drill bit to drill out the M2 mounting holes
-on the PCB (middle layer of sandwich). This means your standoffs are attached
-between the base and switch plate, passing right through the middle layer.
-
-There are M2 mounting holes to support the Choc row of switches. If you cannot
-find standoffs the correct height, there is another option to support these
-switches. There are two small plated through holes; one at either end of the
-row of Choc switches. Solder up the holes in the base layer and solder a diode
-leg into the hole on the PCB/middle layer. The diode leg will then rest on the
-solder on the base plate and provide support.
-
 # Option: join underglow LEDs between halves
 QMK is meant to be able to directly control the backlight LEDs on the slave side of the
 keyboard. At the time of writing, I couldn't get this to work. So if you want to
@@ -119,3 +107,34 @@ just below the ProMicro.
 Then, on the slave, you connect the `SLAVE_LED` pin to the `Din` (input) of your
 LED strip. If you want to also run the top LED on the slave, you'll have to wire
 that up yourself.
+
+# Base plates (or not)
+There are number of options when it comes to choosing standoffs and if you run a
+base plate.
+
+## Standoffs screwed top and bottom (tall)
+This option results in the tallest keyboard and it's what you're probably
+familiar from other keyboards. You have a standoffs between the PCB (middle
+layer) and the base plate and you screw both ends of the standoffs. The shortest
+screws I've found are 4mm long so after you have a 1.6mm PCB, you need at least
+2.4mm off thread in your standoff. We're screwing from both ends so you want at
+least a 5mm long standoff. This results in something that look
+
+## Standoffs screwed one end only (shorter)
+
+## Floating middle PCB, screwed top and bottom (shorter)
+**Note**: I haven't actually tried this but designed the keyboard with this in
+mind.
+
+If you want to, you can use a 4.5mm drill bit to drill out the M2 mounting holes
+on the PCB (middle layer of sandwich). This means your standoffs are attached
+between the base and switch plate, passing right through the middle layer.
+
+There are M2 mounting holes to support the Choc row of switches. If you cannot
+find standoffs the correct height, there is another option to support these
+switches. There are two small plated through holes; one at either end of the
+row of Choc switches. Solder up the holes in the base layer and solder a diode
+leg into the hole on the PCB/middle layer. The diode leg will then rest on the
+solder on the base plate and provide support.
+
+## No base (shortest)
