@@ -16,13 +16,13 @@
 
 
 # What is this thing?
-I've been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
-few years now and I love them. I'm looking for something more compact and with
+Before swapping to this keyboard, I had been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
+few years. I loved using them but I was looking for something more compact and with
 more (easily accessible) thumb keys. There are so many candidates
 ([here](https://docs.google.com/spreadsheets/d/19-rTWbp8SCKdZFByPZu3RT8NSF8vVddDe8WL6R6b1qQ/edit?usp=sharing),
 [here](https://keebfol.io/), [here](https://golem.hu/boards/) and
 [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
-*exactly* what I want, so why not build my own!
+*exactly* what I want, so I decided build my own!
 
 ![ergoslab keyboard photo](./ergoslab.jpg)
 
@@ -131,8 +131,8 @@ Steps for contributing:
 
 ## Generating 3 layers of sandwich case
 We edit a single PCB file that contains the information required to generate all
-3 layer (switch plate, circuitry, base) of a sandwich case keyboard. Keeping it
-all in one file ensures that things like mounting hole always stay lined up.
+3 layers (switch plate, circuitry, base) of a sandwich case keyboard. Keeping it
+all in one file ensures that things like mounting holes always stay lined up.
 
 There is some magic in the settings of items on the PCB to indicate what layer
 they belong on. Read the code for the specifics but as a general guide:
