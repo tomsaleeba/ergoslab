@@ -1,6 +1,11 @@
 > a columnar stagged keyboard that uses a combination of Cherry MX (or
 > compatible) and Kailh choc switches to pack in a heap of thumb keys
 
+*Update Dec 2020*: I've been using this keyboard full time (I'm a professional
+software developer so it sees a lot of use) for a year now and I'm still in love
+with it. If you're considering making one, I would call this design battle
+proven now.
+
 - [What is this thing?](#what-is-this-thing)
 - [Desgin choices:](#desgin-choices)
 - [Build guide](#build-guide)
@@ -16,9 +21,10 @@
 
 
 # What is this thing?
-Before swapping to this keyboard, I had been using an ErgoDox Infinity and an EZ as my daily drivers for quite a
-few years. I loved using them but I was looking for something more compact and with
-more (easily accessible) thumb keys. There are so many candidates
+Before swapping to this keyboard, I had been using an ErgoDox Infinity and an EZ
+as my daily drivers for quite a few years. I loved using them but I was looking
+for something more compact and with more (easily accessible) thumb keys. There
+are so many candidates
 ([here](https://docs.google.com/spreadsheets/d/19-rTWbp8SCKdZFByPZu3RT8NSF8vVddDe8WL6R6b1qQ/edit?usp=sharing),
 [here](https://keebfol.io/), [here](https://golem.hu/boards/) and
 [here](https://github.com/diimdeep/awesome-split-keyboards)) but none match
@@ -54,7 +60,9 @@ See the [releases](https://github.com/tomsaleeba/ergoslab/releases) for this
 GitHub repo for the generated Gerber files. You probably want the most recent
 version.
 
-If you need to generate your own gerbers, see [how to turn the master PCB into the 3 generated PCBs](#generating-3-layers-of-sandwich-case) and then [how to generate gerbers](#generating-gerbers).
+If you need to generate your own gerbers, see [how to turn the master PCB into
+the 3 generated PCBs](#generating-3-layers-of-sandwich-case) and then [how to
+generate gerbers](#generating-gerbers).
 
 # Parts list
 ## Parts you'll have to find yourself
@@ -78,17 +86,18 @@ If you need to generate your own gerbers, see [how to turn the master PCB into t
   - 36x M2x4 screw (See Note1 and Note2) for mounting the middle/PCB layer to the base
       plate
 
-**Note1**: the screw/bolt length depends on the height of the standoffs you get. You
-want 1.6mm thick PCBs so make sure you don't have *too much* thread on your
+**Note1**: the screw/bolt length depends on the height of the standoffs you get.
+You want 1.6mm thick PCBs so make sure you don't have *too much* thread on your
 screws.
 
-**Note2**: it's highly recommended to get hex head/allen key/ISO7380 screws (see image below). This is
-because a phillips head screwdriver probably won't fit through the holes in the
-switch plate to tighten the screws on the middle/PCB layer. You can always drill
-those holes a bit bigger or loctite the screws in (so they won't need tighening)
-to workaround this. As you have hotswap sockets, you may be able to remove the
-switches and pull the middle/PCB layer screws out through the switch holes.
-Beware: with 4mm long screws, I couldn't achieve this, though it was very close.
+**Note2**: it's highly recommended to get hex head/allen key/ISO7380 screws (see
+image below). This is because a phillips head screwdriver probably won't fit
+through the holes in the switch plate to tighten the screws on the middle/PCB
+layer. You can always drill those holes a bit bigger or loctite the screws in
+(so they won't need tighening) to workaround this. As you have hotswap sockets,
+you may be able to remove the switches and pull the middle/PCB layer screws out
+through the switch holes.  Beware: with 4mm long screws, I couldn't achieve
+this, though it was very close.
 
 ![Photo of hex head screws](./misc/hex-head-screws.jpg)
 
