@@ -6,6 +6,8 @@ software developer so it sees a lot of use) for a year now and I'm still in love
 with it. If you're considering making one, I would call this design battle
 proven now.
 
+*Update Jan 2022*: Still using this full-time and loving it 💪.
+
 - [What is this thing?](#what-is-this-thing)
 - [Desgin choices:](#desgin-choices)
 - [Build guide](#build-guide)
@@ -72,7 +74,7 @@ generate gerbers](#generating-gerbers).
   - 2x Pro Micros
   - 1x TRRS cable
   - 42x Cherry MX (or compatible) switches
-  - 42x [Kailh hotswap PCB sockets](https://novelkeys.xyz/products/kailh-pcb-sockets)
+  - 42x [Kailh hotswap PCB sockets](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html)
   - 10x Kailh choc switches
   - 42x 1U MX key caps
   - 10x 1U Kailh choc key caps
